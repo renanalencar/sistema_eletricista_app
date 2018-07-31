@@ -1,0 +1,7 @@
+{
+  "name": "Eletricista",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
