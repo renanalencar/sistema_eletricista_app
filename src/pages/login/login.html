@@ -7,7 +7,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="myview" padding>
   <div><h1 class="ele">Eletricista </h1><h1 class="horas">24hs</h1></div>
   <div class="amarelo"><p> </p></div>
   <h2>Resolvendo seus problemas elétricos na hora que você mais precisa</h2>
@@ -15,15 +15,14 @@
 
   <form>
     <ion-item>
-      <ion-label> Usuário </ion-label>
-      <ion-input name="Usuario" type="text"></ion-input>
-    </ion-item> <ion-item>
-        <ion-label> Senha </ion-label>
-        <ion-input name="Senha" type="password"></ion-input>
+      <ion-input value="Usuário" name="Usuario" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input value="Senha" name="Senha" type="password">Senha</ion-input>
       </ion-item>
     <button class="butao" ion-button block type="submit">Entrar</button>
   </form>
   <p class="cadastro">Ainda não possui conta? Cadastre-se aqui</p>
   <p class="pequeno">Ao criar a conta, você aceita os termos e condições de uso.</p>
-  <img src="assets\imgs\lampada2.jpg" alt="lampada">
+  
 </ion-content>
