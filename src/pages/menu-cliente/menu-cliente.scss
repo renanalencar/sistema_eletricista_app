@@ -5,6 +5,7 @@ page-menu-cliente {
     }
     .eletricista{
         display: inline-block;
+        margin-top: 0px;
     }
     .verm{
         display: inline-block;
@@ -23,6 +24,7 @@ page-menu-cliente {
         background-color: #E7E7E7;
         display: inline-block;
         margin-left: 5%;
+        transform:translateY(90%);
     }
     .perfil{
         color: #979797;
@@ -40,6 +42,7 @@ page-menu-cliente {
         display: inline-block;
         margin-left: 35%;
         margin-right: 35%;
+        transform:translateY(90%);
         
     }
     .bbulb{
@@ -50,6 +53,7 @@ page-menu-cliente {
         display: inline-block;
         margin-left: 25%;
         margin-right: 5%;
+        transform:translateY(90%);
     }
     .flash{
         color: black;
@@ -63,18 +67,31 @@ page-menu-cliente {
         margin-left: 10%;
         margin-right: 36%;
         margin-top: 10px;
+        transform:translateY(455%);
     }
     .pserv{
         font-size: 115%;
         margin-top: 10px;
+        transform:translateY(455%);
     }
     .psoli{
         font-size: 115%;
         margin-left: 33%;
         margin-right: 33%;
+        transform:translateY(455%);
     }
     .pres{
         font-size: 120%;
         text-align: center;
+        transform:translateY(453%);
+    }
+    .img{
+        width: 20%;
+        display: inline-block;
+        float:right;
+    }
+    h1{
+        display: inline-block;
+        margin-right: 45%;
     }
 }
