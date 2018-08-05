@@ -2,7 +2,7 @@ import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { NavParams, AlertController } from 'ionic-angular';
-import { Usuario } from '../../classes/usuario'
+import { Usuario } from '../classes/usuario'
 import 'rxjs/Rx';
 
 /*
@@ -15,6 +15,8 @@ import 'rxjs/Rx';
 export class ApiProvider {
 
   private apiURL: string =  ''; //URL base da API, falta inserir o URL quando tivermos
+  private usuarioLogado: Usuario = null; //objeto do usuario atual
+  private token: string = null; //token unico do usuario
 
   constructor(public http: Http,private storage: Storage) {}
 
@@ -24,8 +26,6 @@ export class ApiProvider {
   	return new Promise<any>((resolve, reject) => {
         //aqui entra o GET, mas como ainda nao temos a API, não tem como fazer essa parte
     });
-    
-    
   }
 
   /** 
