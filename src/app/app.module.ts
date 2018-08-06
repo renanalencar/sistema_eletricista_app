@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
+import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    MenuClientePage
+    MenuClientePage,
+    MenuEletricistaPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
     MyApp,
     HomePage,
     LoginPage,
-    MenuClientePage
+    MenuClientePage,
+    MenuEletricistaPage
   ],
   providers: [
     StatusBar,
