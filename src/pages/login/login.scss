@@ -1,3 +1,93 @@
 page-login {
-
+    .myview{
+        background-image: url('../../assets/imgs/Fundo2.png');
+        background-repeat: no-repeat;
+        background-size:auto;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        display: inline-block;
+    }
+    .ele{
+        margin-top:0px !important;
+    }
+    .horas{
+        margin-top: 0px;
+        margin-left: 5px;
+        color: red;
+    }
+    h2{
+        font-size: 120%;
+        text-align:center;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        font-size: 140%;
+        transform:translateY(-5px);
+    }
+    .amarelo{
+        background-color: yellow;
+        height: 2px;
+    }
+    .item-inner{
+        border:0px !important;
+    }
+    .item{
+        transform:translateY(60px);
+    }
+    .input-wrapper{
+        background-color: #D4D4D4;
+        border-radius: 15px;
+        margin-bottom: 4px;
+    }
+    .ion-imput{
+        color:black;
+    }
+    ion-label{
+        padding-left: 10px;
+        color:black;
+    }
+    .text-input{
+        margin-left:4px;
+        margin-right:4px;
+        background-color: white;
+        padding-left:8px;
+        padding-right:8px;
+        border-radius:10px;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+    .item{
+        background-color:#f4f4f4;
+        padding-left:8px;
+    }
+    .butao{
+        border-radius: 50px;
+        height: 50px;
+        width: 90px;
+        margin-left: 37%;
+        background-color: #f4bc16;
+        transform:translateY(80px);
+    }
+    .button-inner{
+        color:black;
+    }
+    .cadastro{
+        font-size:110%;
+        transform:translateY(300px);
+    }
+    .pequeno{
+        font-size: 90%;
+        transform:translateY(300px);
+    }
+    .imagem{
+        position: relative;
+        top:-405px;
+        left:-20px;
+        width:200%;
+    }
 }
