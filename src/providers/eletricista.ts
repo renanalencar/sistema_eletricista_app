@@ -22,9 +22,17 @@ export class EletricistaProvider {
     //infos serão mostradas na pagina de perfil
   }
 
-  public getServicosAnteriores(token:string){
+  public getServicosAnteriores(token: string){
     //pega serviços anteriores do cliente quando usuário clica no botão respectivo
     //infos serão mostradas na pagina de serviços
+  }
+
+  public getFaturamentoSemana(token: string){
+    //recebe faturamento dos ultimos 7 dias
+  }
+
+  public getFaturamentoTotal(token: string){
+    //
   }
 
 }
