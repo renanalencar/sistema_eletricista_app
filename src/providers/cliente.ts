@@ -18,7 +18,7 @@ export class ClienteProvider {
   private apiURL: string =  ''; //URL base da API
   private perfil: Perfil;
 
-  constructor(public http: Http,private storage: Storage) {}
+  constructor(public http: Http) {}
 
   public getPerfil(token: string){//pensei em identificar o usuário por um token, mas n sei se é uma boa ideia
     //pega as infos de perfil quando o usuário clica em "perfil"
