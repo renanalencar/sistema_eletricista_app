@@ -5,7 +5,7 @@ import { NavParams, AlertController } from 'ionic-angular';
 import 'rxjs/Rx';
 
 /*
-  Provider para fazer conexão com a API da plataforma da EC Cursos
+  Provider para fazer conexão com a API
 
   Todos os métodos devem retornar uma promessa e seguir o padrão de nomes.
 

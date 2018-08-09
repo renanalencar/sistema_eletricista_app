@@ -3,9 +3,11 @@ import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { NavParams, AlertController } from 'ionic-angular';
 import 'rxjs/Rx';
+import { Perfil } from '../classes/perfil';
+import { ServicoAnterior } from '../classes/servico_anterior';
 
 /*
-  Provider para fazer conexão com a API da plataforma da EC Cursos
+  Provider para fazer conexão nossa API
 
   Todos os métodos devem retornar uma promessa e seguir o padrão de nomes.
 
@@ -14,6 +16,7 @@ import 'rxjs/Rx';
 export class ClienteProvider {
 
   private apiURL: string =  ''; //URL base da API
+  private perfil: Perfil;
 
   constructor(public http: Http,private storage: Storage) {}
 
@@ -30,4 +33,9 @@ export class ClienteProvider {
   public solicitarServico(endereco: string, descricao: string){
     //solicita o serviço com os dados passados pelo cliente
   }
+
+  public editarPerfil(dados_novos: any){
+    //so preciso dar PUT no objeto "dados_novos" passado com as infos novas
+  }
+
 }
