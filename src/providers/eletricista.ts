@@ -35,4 +35,16 @@ export class EletricistaProvider {
     //
   }
 
+  public getChamados(){
+
+  }
+
+  public aceitaChamdo(){
+
+  }
+
+  public rejeitaChamado(){
+    
+  }
+
 }
