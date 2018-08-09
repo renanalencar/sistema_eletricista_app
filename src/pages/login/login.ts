@@ -19,20 +19,4 @@ export class LoginPage {
     public navParams: NavParams, 
     private _service: UsuarioService, 
     private _alertCtrl: AlertController) {}
-
-  efetuaLogin() { 
-
-    this._service
-      .efetuaLogin(this.email, this.senha)
-      .then(() => {
-        this.navCtrl.setRoot(MenuClientePage)
-      })
-      .catch(() => {
-        this._alertCtrl.create({
-          title: 'Problema no login',
-          subTitle: 'Email ou senha inválidos. Verifique',
-          buttons: [{ text: 'Ok'}]
-        }).present();
-      });
   }
-}
