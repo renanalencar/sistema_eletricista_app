@@ -1,0 +1,91 @@
+page-perfil {
+h1{
+    text-align: center;
+}
+.amarelo{
+    background-color: yellow;
+    height: 2px;
+}
+.divimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    transform:translateY(20px);
+}
+.divi{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    display: inline-block;
+}
+h2{
+    font-size: 140%;
+    display: inline-block;
+    transform:translateY(-25px);
+    margin-left: 10%;
+}
+.dados{
+    background-color: #FCFCFC;
+    transform:translateY(70px);
+    height: 25%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 10px;
+    border:1px;
+    border-style: solid;
+}
+.endereco{
+    font-size: 130%;
+    //transform:translateY(70px);
+    margin-left: 10px;
+    text-align: center;
+}
+.numero{
+    font-size: 130%;
+   // transform:translateY(80px);
+    margin-left: 10px;
+    text-align: center;
+}
+.email{
+    font-size: 130%;
+    // transform:translateY(80px);
+     margin-left: 10px;
+     text-align: center;
+}
+.cartao{
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    transform:translateY(90px);
+}
+.tipo{
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+}
+.n{
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+}
+.cadastrado{
+    background-color: #FCFCFC;
+    border-color: black;
+    border: 2px;
+    border-style: solid;
+    border-radius:40px;
+    width: 60%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 20%;
+    transform:translateY(90px);
+}
+.editar{
+    font-size: 105%;
+    display: flex;
+    justify-content: center;
+    transform:translateY(120px);
+    color: black;
+    background-color: white;
+}
+}

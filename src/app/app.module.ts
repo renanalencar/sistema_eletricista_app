@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
 import { UsuarioService } from '../domain/usuario/usuario-service';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
@@ -21,7 +22,8 @@ import 'rxjs/add/operator/toPromise';
     HomePage,
     LoginPage,
     MenuClientePage,
-    MenuEletricistaPage
+    MenuEletricistaPage,
+    PerfilPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import 'rxjs/add/operator/toPromise';
     HomePage,
     LoginPage,
     MenuClientePage,
-    MenuEletricistaPage
+    MenuEletricistaPage,
+    PerfilPage
   ],
   providers: [
     StatusBar,
