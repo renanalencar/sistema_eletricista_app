@@ -1,25 +1,38 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { MenuClientePage } from '../menu-cliente/menu-cliente'
+import { MenuEletricistaPage } from '../menu-eletricista/menu-eletricista';
+import { UsuarioService } from '../../domain/usuario/usuario-service';
 
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
-@IonicPage()
 @Component({
   selector: 'page-login',
-  templateUrl: 'login.html',
+  templateUrl: 'login.html'
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  public email: string = '';
+  public senha: string = '';
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
-  }
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams, 
+    private _service: UsuarioService, 
+    private _alertCtrl: AlertController) {}
 
+  efetuaLogin() { 
+
+    this._service
+      .efetuaLogin(this.email, this.senha)
+      .then(() => {
+        this.navCtrl.setRoot(MenuClientePage)
+      })
+      .catch(() => {
+        this._alertCtrl.create({
+          title: 'Problema no login',
+          subTitle: 'Email ou senha inválidos. Verifique',
+          buttons: [{ text: 'Ok'}]
+        }).present();
+      });
+  }
 }

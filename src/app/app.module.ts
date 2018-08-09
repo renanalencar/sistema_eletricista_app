@@ -9,6 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+import { UsuarioService } from '../domain/usuario/usuario-service';
+
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +25,7 @@ import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista'
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -33,6 +38,7 @@ import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista'
   providers: [
     StatusBar,
     SplashScreen,
+    UsuarioService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

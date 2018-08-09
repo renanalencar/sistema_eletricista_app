@@ -13,12 +13,12 @@
   <h2>Resolvendo seus problemas elétricos na hora que você mais precisa</h2>
   <p>Login</p>
 
-  <form>
+  <form (ngSubmit)="efetuaLogin()">
     <ion-item>
-      <ion-input value="Usuário" name="Usuario" type="text"></ion-input>
+      <ion-input [(ngModel)]="email" value="Usuário" name="Usuario" type="text"></ion-input>
     </ion-item>
     <ion-item>
-        <ion-input value="Senha" name="Senha" type="password">Senha</ion-input>
+        <ion-input [(ngModel)]="senha" value="Senha" name="Senha" type="password">Senha</ion-input>
       </ion-item>
     <button class="butao" ion-button block type="submit">Entrar</button>
   </form>
