@@ -8,6 +8,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
+import { ClienteProvider } from '../../src/providers/cliente';
+import { LoginProvider } from '../../src/providers/login';
+import { EletricistaProvider } from '../../src/providers/eletricista';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ClienteProvider,
+    LoginProvider,
+    EletricistaProvider
   ]
 })
 export class AppModule {}

@@ -12,7 +12,7 @@ import 'rxjs/Rx';
 
 */
 @Injectable()
-export class ApiProvider {
+export class LoginProvider {
 
   private apiURL: string =  ''; //URL base da API, falta inserir o URL quando tivermos
   private usuarioLogado: Usuario = null; //objeto do usuario atual
@@ -22,7 +22,7 @@ export class ApiProvider {
 
   /** Método que faz login e salva token de usuário caso tenha sucesso  **/
   public efetuaLogin(email: string, senha: string){
-  	let url = this.apiURL + '?acao=login&identificacao=ec2018cursos&email=' + email + '&senha=' + senha; //parametros para executar acao na api
+  	let url = this.apiURL + ''; //parametros para executar acao na api
   	return new Promise<any>((resolve, reject) => {
         //aqui entra o GET, mas como ainda nao temos a API, não tem como fazer essa parte
     });
