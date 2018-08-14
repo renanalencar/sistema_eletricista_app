@@ -5,6 +5,7 @@ import { NavParams, AlertController } from 'ionic-angular';
 import 'rxjs/Rx';
 import { Perfil } from '../classes/perfil';
 import { ServicoAnterior } from '../classes/servico_anterior';
+import { Chamado } from '../classes/chamado';
 
 /*
   Provider para fazer conexão nossa API
@@ -30,7 +31,7 @@ export class ClienteProvider {
     //infos serão mostradas na pagina de serviços
   }
 
-  public solicitarServico(endereco: string, descricao: string){
+  public solicitarServico(chamado: Chamado){
     //solicita o serviço com os dados passados pelo cliente
   }
 
