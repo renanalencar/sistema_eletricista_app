@@ -1,9 +1,11 @@
 page-login {
     .myview{
-        background-image: url('../../assets/imgs/Fundo.png');
+        background-image: url('../../assets/imgs/img.png');
+        
         background-repeat: no-repeat;
-        background-size:105%;
+        background-size:167%;
         background-position: center;
+        
     }
     div{
         display: flex;
@@ -41,9 +43,11 @@ page-login {
         border:0px !important;
         padding-right: 0px !important;
         width: 378px !important;
+        
     }
     .item{
         transform:translateY(230%);
+        border-radius: 10px;
     }
     .input-wrapper{
         
@@ -56,12 +60,13 @@ page-login {
         color:black;
     }
     .esqueceu{
-        transform: translateY(230%);
+        transform: translateY(350%);
         width: 50%;
         margin-left: 25%;
         background-color: #f4bc16;
         font-weight: bold;
-
+        border-radius: 10px;
+        opacity: 100%;
     }
     .butao{
         height: 50px;
@@ -72,6 +77,7 @@ page-login {
         font-weight: bold;
         font-size: 150%;
         letter-spacing: 3px;
+        border-radius: 10px;
     }
     .button-inner{
         color:black;
