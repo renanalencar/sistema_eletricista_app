@@ -1,8 +1,11 @@
 page-login {
     .myview{
-        background-image: url('../../assets/imgs/Fundo2.png');
+        background-image: url('../../assets/imgs/img.png');
+        
         background-repeat: no-repeat;
-        background-size:auto;
+        background-size:167%;
+        background-position: center;
+        
     }
     div{
         display: flex;
@@ -13,6 +16,7 @@ page-login {
     }
     .ele{
         margin-top:0px !important;
+        color:#f9f9f9;
     }
     .horas{
         margin-top: 0px;
@@ -22,12 +26,14 @@ page-login {
     h2{
         font-size: 120%;
         text-align:center;
+        color:#f9f9f9;
     }
     p{
         display: flex;
         justify-content: center;
         font-size: 140%;
-        transform:translateY(-5px);
+        transform:translateY(340%);
+        color:#f9f9f9;
     }
     .amarelo{
         background-color: yellow;
@@ -35,14 +41,16 @@ page-login {
     }
     .item-inner{
         border:0px !important;
+        padding-right: 0px !important;
+        width: 378px !important;
+        
     }
     .item{
-        transform:translateY(60px);
+        transform:translateY(230%);
+        border-radius: 10px;
     }
     .input-wrapper{
-        background-color: #D4D4D4;
-        border-radius: 15px;
-        margin-bottom: 4px;
+        
     }
     .ion-imput{
         color:black;
@@ -51,38 +59,41 @@ page-login {
         padding-left: 10px;
         color:black;
     }
-    .text-input{
-        margin-left:4px;
-        margin-right:4px;
-        background-color: white;
-        padding-left:8px;
-        padding-right:8px;
-        border-radius:10px;
-        margin-bottom: 7px;
-        margin-top: 7px;
-    }
-    .item{
-        background-color:#f4f4f4;
-        padding-left:8px;
+    .esqueceu{
+        transform: translateY(350%);
+        width: 50%;
+        margin-left: 25%;
+        background-color: #f4bc16;
+        font-weight: bold;
+        border-radius: 10px;
+        opacity: 100%;
     }
     .butao{
-        border-radius: 50px;
         height: 50px;
-        width: 90px;
-        margin-left: 37%;
+        width: 80%;
+        margin-left: 10%;
         background-color: #f4bc16;
-        transform:translateY(80px);
+        transform:translateY(230%);
+        font-weight: bold;
+        font-size: 150%;
+        letter-spacing: 3px;
+        border-radius: 10px;
     }
     .button-inner{
         color:black;
     }
+    .item{
+    
+        opacity: 100%;
+        margin-bottom: 15px;
+    }
     .cadastro{
         font-size:110%;
-        transform:translateY(300px);
+        transform:translateY(980%);
     }
     .pequeno{
         font-size: 90%;
-        transform:translateY(300px);
+        transform:translateY(1200%);
     }
     .imagem{
         position: relative;
