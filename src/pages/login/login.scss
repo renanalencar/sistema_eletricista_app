@@ -1,3 +1,104 @@
 page-login {
-
+    .myview{
+        background-image: url('../../assets/imgs/img.png');
+        
+        background-repeat: no-repeat;
+        background-size:167%;
+        background-position: center;
+        
+    }
+    div{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        display: inline-block;
+    }
+    .ele{
+        margin-top:0px !important;
+        color:#f9f9f9;
+    }
+    .horas{
+        margin-top: 0px;
+        margin-left: 5px;
+        color: red;
+    }
+    h2{
+        font-size: 120%;
+        text-align:center;
+        color:#f9f9f9;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        font-size: 140%;
+        transform:translateY(340%);
+        color:#f9f9f9;
+    }
+    .amarelo{
+        background-color: yellow;
+        height: 2px;
+    }
+    .item-inner{
+        border:0px !important;
+        padding-right: 0px !important;
+        width: 378px !important;
+        
+    }
+    .item{
+        transform:translateY(230%);
+        border-radius: 10px;
+    }
+    .input-wrapper{
+        
+    }
+    .ion-imput{
+        color:black;
+    }
+    ion-label{
+        padding-left: 10px;
+        color:black;
+    }
+    .esqueceu{
+        transform: translateY(350%);
+        width: 50%;
+        margin-left: 25%;
+        background-color: #f4bc16;
+        font-weight: bold;
+        border-radius: 10px;
+        opacity: 100%;
+    }
+    .butao{
+        height: 50px;
+        width: 80%;
+        margin-left: 10%;
+        background-color: #f4bc16;
+        transform:translateY(230%);
+        font-weight: bold;
+        font-size: 150%;
+        letter-spacing: 3px;
+        border-radius: 10px;
+    }
+    .button-inner{
+        color:black;
+    }
+    .item{
+    
+        opacity: 100%;
+        margin-bottom: 15px;
+    }
+    .cadastro{
+        font-size:110%;
+        transform:translateY(980%);
+    }
+    .pequeno{
+        font-size: 90%;
+        transform:translateY(1200%);
+    }
+    .imagem{
+        position: relative;
+        top:-405px;
+        left:-20px;
+        width:200%;
+    }
 }

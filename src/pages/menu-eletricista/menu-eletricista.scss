@@ -1,3 +1,127 @@
 page-menu-eletricista {
+    .amarelo{
+        background-color: yellow;
+        height: 2px;
+    }
+    .eletricista{
+        display: inline-block;
+        margin-top: 0px;
+    }
+    .verm{
+        display: inline-block;
+        color: red;
+        margin-top:-3px;
+    }
+    .voce{
+        font-size: 150%;
+        display: flex;
+        justify-content: center;
+    }
+    .butao{
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: #E7E7E7;
+        display: inline-block;
+        margin-left: 5%;
+        transform:translateY(90%);
+    }
+    .perfil{
+        color: #979797;
+        font-size: 730%;
+    }
+    .solicitar{
+        color: black;
+        font-size: 500%;
+    }
+    .bperf{
+        background-color: #39BD34;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin-left: 5%;
+        transform:translateY(90%);   
+    }
+    .bcham{
+        background-color: #412CFF;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin-left: 25%;
+        margin-right: 5%;
+        transform:translateY(90%);
+    }
+    .bbulb{
+        background-color: #f5010b;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin-left: 25%;
+        margin-right: 5%;
+        transform:translateY(90%);
+    }
+    .flash{
+        color: black;
+        font-size: 550%;
+    }
+    .money{
+        color:white;
+        font-size: 470%;
+    }
+    p{
+        display: inline-block;
+    }
+    .pperfil{
+        font-size: 115%;
+        margin-left: 10%;
+        margin-right: 36%;
+        margin-top: 10px;
+        transform:translateY(455%);
+    }
+    .pserv{
+        font-size: 115%;
+        margin-top: 10px;
+        transform:translateY(455%);
+    }
+    .psoli{
+        font-size: 115%;
+        margin-left: 6%;
+        margin-right: 24%;
+        margin-top: 10px;
+        transform:translateY(455%);
+    }
+    .pcham{
+        font-size: 115%;
+        margin-left: 6%;
+        margin-right: 18%;
+        margin-top: 10px;
+        transform:translateY(455%);
+    }
+    .pres{
+        font-size: 120%;
+        display: flex;
+        justify-content: center;
+        transform:translateY(455%);
+    }
+    .img{
+        width: 20%;
+        display: inline-block;
+        float:right;
+    }
+    h1{
+        display: inline-block;
+        margin-right: 45%;
+    }
+    .recebe{
+        font-size: 70%;
+        width: 21%;
+        color:black;
+        background-color: #00D100;
+        transform:translateY(300%);
+        margin-left: 38%;
 
+    }
 }

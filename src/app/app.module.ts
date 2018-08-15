@@ -11,24 +11,29 @@ import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
+import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    MenuClientePage
+    MenuClientePage,
+    MenuEletricistaPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     LoginPage,
-    MenuClientePage
+    MenuClientePage,
+    MenuEletricistaPage
   ],
   providers: [
     StatusBar,
