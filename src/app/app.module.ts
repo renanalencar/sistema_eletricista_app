@@ -15,6 +15,9 @@ import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista'
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
+import { HttpModule } from '@angular/http';
+import { IonicStorageModule } from '@ionic/storage';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -26,6 +29,8 @@ import 'rxjs/add/operator/toPromise';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
