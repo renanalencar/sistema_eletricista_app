@@ -18,10 +18,13 @@ import { Chamado } from '../../classes/chamado';
 })
 export class PedirservicoPage {
 
-  public enderecopassado: String;
-  public endereco: String = null;
-  public descricao: String = null;
+  public enderecopassado: string;
+  public endereco: string = null;
+  public descricao: string = null;
   public servico: Chamado;
+  public nome_cliente: string;
+  public nota: number; 
+  //pegar infos acima na passagem de telas (navparams)
 
   constructor(public navCtrl: NavController, 
               public navParams: NavParams,
@@ -34,7 +37,8 @@ export class PedirservicoPage {
       content: 'Carregando. Aguarde...'
     });
     loader.present();
-    loader.dismiss();//fiz isso pra quando precisarmos usar o loader
+    loader.dismiss();
+    //fiz isso acima do loader pra quando precisarmos usar o loader
 
   }
 
@@ -54,11 +58,16 @@ export class PedirservicoPage {
     });
     loader.present();
 
+    this.servico.descricao = this.descricao;
+    this.servico.endereco = this.endereco;
+    this.servico.nome_cliente = this.nome_cliente;
+    this.servico.nota = this.nota
+
     this.providerCliente
       .solicitarServico(this.servico)
       .then(resposta => {
         loader.dismiss();
-        //mudar para proxima pagina
+        //mudar para proxima pagina (navctrl)
       })
       .catch(()=> {
         loader.dismiss();
