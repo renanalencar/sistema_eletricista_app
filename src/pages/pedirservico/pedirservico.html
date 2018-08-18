@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>pedirservico</ion-title>
+    <ion-title>Pedir Servico</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,19 @@
 
 <ion-content padding>
 
+
+
+  <form (submit)='enviarServico()' class="form-servico">
+    <ion-list>
+      <ion-item>
+          <ion-label stacked>Endereço</ion-label>
+          <ion-input value="enderecopassado" [(ngModel)]="endereco" name="endereco" type="text"></ion-input>
+      </ion-item> 
+      <ion-item>
+          <ion-label stacked>Descreva o Serviço</ion-label>
+          <ion-input [(ngModel)]="descricao" name="descricao" type="text"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button block type="submit" class="botao">Enviar</button>
+  </form>
 </ion-content>

@@ -8,10 +8,13 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
+import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
+import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
-import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
@@ -24,7 +27,8 @@ import { IonicStorageModule } from '@ionic/storage';
     HomePage,
     LoginPage,
     MenuClientePage,
-    MenuEletricistaPage
+    MenuEletricistaPage,
+    PedirservicoPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,8 @@ import { IonicStorageModule } from '@ionic/storage';
     HomePage,
     LoginPage,
     MenuClientePage,
-    MenuEletricistaPage
+    MenuEletricistaPage,
+    PedirservicoPage
   ],
   providers: [
     StatusBar,
