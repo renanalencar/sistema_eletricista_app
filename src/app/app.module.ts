@@ -8,12 +8,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
+import { ClienteProvider } from '../../src/providers/cliente';
+import { LoginProvider } from '../../src/providers/login';
+import { EletricistaProvider } from '../../src/providers/eletricista';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
-import { UsuarioService } from '../domain/usuario/usuario-service';
-
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
-
 
 @NgModule({
   declarations: [
@@ -38,8 +38,10 @@ import 'rxjs/add/operator/toPromise';
   providers: [
     StatusBar,
     SplashScreen,
-    UsuarioService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ClienteProvider,
+    LoginProvider,
+    EletricistaProvider
   ]
 })
 export class AppModule {}
