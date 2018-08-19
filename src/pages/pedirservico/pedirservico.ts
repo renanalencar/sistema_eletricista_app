@@ -18,7 +18,6 @@ import { Chamado } from '../../classes/chamado';
 })
 export class PedirservicoPage {
 
-  public enderecopassado: string;
   public endereco: string = null;
   public descricao: string = null;
   public servico: Chamado;
