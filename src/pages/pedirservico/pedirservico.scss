@@ -13,6 +13,10 @@ page-pedirservico {
         margin-bottom: 20px;
     }
 
+    .ion-title {
+        text-align: center;
+    }
+
     .titulo {
         font-size: 25px;
         text-align: center;
@@ -21,7 +25,7 @@ page-pedirservico {
     }
 
     .introducao {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10%;
         text-align: center;
     }
@@ -29,13 +33,11 @@ page-pedirservico {
     .botao {
         background-color: #000000;
         color: white;
+        font-weight: bold;
     }
 
     .desc {
         height: 100px;
-        overflow: inherit ;
-        text-overflow: inherit ;
-        white-space: normal;
     }
 
     .item {

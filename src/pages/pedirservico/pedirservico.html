@@ -26,9 +26,10 @@
           <!--><ion-label stacked>Endereço:</ion-label></!-->
           <ion-input placeholder="Endereço:" value="enderecopassado" [(ngModel)]="endereco" name="endereco" type="text"></ion-input>
       </ion-item> 
-      <ion-item>
+      <ion-item> 
           <!--><<ion-label stacked>Descreva o Serviço:</ion-label></!-->
           <ion-input placeholder="Descreva o serviço..." class="desc" [(ngModel)]="descricao" name="descricao" type="text"></ion-input>
+          <!-->falta fazer o texto da descrição quebrar, não é text-wrap</!-->
       </ion-item>
     </ion-list>
     <button ion-button block type="submit" class="botao">Solicitar Serviço</button>
