@@ -1,18 +1,37 @@
-<!--
-  Generated template for the PedirservicoPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>pedirservico</ion-title>
+    <ion-title>Pedir Serviço</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-row style="text-align: center">
+    <ion-col style="text-align: center">
+        <img class="logo" src="/assets/imgs/logo-personagem.png" id="logotipo"/>
+    </ion-col>
+  </ion-row>
+  
 
+  <h1 class="titulo">Precisando de Eletricistas?</h1>
+  <h2 class="introducao">
+    Descreva seu problema abaixo!
+  </h2>
+
+  <form (submit)='enviarServico()' class="form-servico">
+    <ion-list>
+      <ion-item>
+          <!--><ion-label stacked>Endereço:</ion-label></!-->
+          <ion-input placeholder="Endereço:" value="enderecopassado" [(ngModel)]="endereco" name="endereco" type="text"></ion-input>
+      </ion-item> 
+      <ion-item> 
+          <!--><<ion-label stacked>Descreva o Serviço:</ion-label></!-->
+          <ion-input placeholder="Descreva o serviço..." class="desc" [(ngModel)]="descricao" name="descricao" type="text"></ion-input>
+          <!-->falta fazer o texto da descrição quebrar, não é text-wrap</!-->
+      </ion-item>
+    </ion-list>
+    <button ion-button block type="submit" class="botao">Solicitar Serviço</button>
+  </form>
 </ion-content>

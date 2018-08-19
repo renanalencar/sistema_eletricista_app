@@ -33,6 +33,7 @@ export class ClienteProvider {
 
   public solicitarServico(chamado: Chamado){
     //solicita o serviço com os dados passados pelo cliente
+    return new Promise<any>((resolve, reject) => {});
   }
 
   public editarPerfil(dados_novos: any){

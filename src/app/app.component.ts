@@ -6,7 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
-
+import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
@@ -16,7 +16,8 @@ import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista'
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  //rootPage:any = LoginPage;
+  rootPage:any = PedirservicoPage;
 
   constructor(platform: Platform, 
               statusBar: StatusBar, 
