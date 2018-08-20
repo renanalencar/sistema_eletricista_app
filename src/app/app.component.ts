@@ -12,6 +12,10 @@ import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 export class MyApp {
   rootPage:any = MenuClientePage;
 
+  public paginas = [
+    // {titulo: 'Agendamentos', componente: AgendamentosPage }
+  ];
+
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
