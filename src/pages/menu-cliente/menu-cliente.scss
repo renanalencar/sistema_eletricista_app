@@ -1,8 +1,10 @@
 page-menu-cliente {
-    body{
-        background-image: url('../../assets/imgs/Mapa.png');
-        background-position: center;
+    .myview{
+        background-image: url('../../assets/imgs/Mapa.png'); 
+        width: 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
+        background-position: center;
     }
     .menu{
         background: transparent;
