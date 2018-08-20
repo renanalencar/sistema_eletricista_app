@@ -10,7 +10,7 @@ import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  rootPage:any = MenuClientePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
