@@ -5,10 +5,14 @@
         </ion-toolbar>
     </ion-header>
     <ion-content padding>
-        <ion-list>
-            <button ion-item *ngFor="let pagina of paginas" menuClose>{{ pagina.titulo }}</button>
+        <ion-list inset>
+            <div class="div">
+                <img class ="imgperf" src="../assets/imgs/logo.png">
+            </div>
+            <p class="nome">Mario joaquim</p>
+            <button style=border:0px ion-item *ngFor="let pagina of paginas" menuClose>{{ pagina.titulo }}</button>
         </ion-list>
     </ion-content>
 </ion-menu>
 
-<ion-nav [root]="rootPage" #content></ion-nav>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

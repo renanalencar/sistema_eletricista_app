@@ -7,13 +7,15 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  selector: 'page-menu'
 })
 export class MyApp {
   rootPage:any = MenuClientePage;
 
   public paginas = [
-    // {titulo: 'Agendamentos', componente: AgendamentosPage }
+     {titulo: 'Perfil', componente: MenuClientePage },
+     {titulo: 'Histórico de serviços', componente: MenuClientePage }
   ];
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
