@@ -8,12 +8,18 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
+import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
+import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
-import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
+
+import { HttpModule } from '@angular/http';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -21,11 +27,14 @@ import 'rxjs/add/operator/toPromise';
     HomePage,
     LoginPage,
     MenuClientePage,
-    MenuEletricistaPage
+    MenuEletricistaPage,
+    PedirservicoPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -33,7 +42,8 @@ import 'rxjs/add/operator/toPromise';
     HomePage,
     LoginPage,
     MenuClientePage,
-    MenuEletricistaPage
+    MenuEletricistaPage,
+    PedirservicoPage
   ],
   providers: [
     StatusBar,
