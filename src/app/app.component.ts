@@ -13,11 +13,17 @@ import { EletricistaProvider } from '../../src/providers/eletricista';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  selector: 'page-menu'
 })
 export class MyApp {
-  //rootPage:any = LoginPage;
-  rootPage:any = PedirservicoPage;
+
+  rootPage:any = MenuClientePage;
+
+  public paginas = [
+     {titulo: 'Perfil', componente: MenuClientePage },
+     {titulo: 'Histórico de serviços', componente: MenuClientePage }
+  ];
 
   constructor(platform: Platform, 
               statusBar: StatusBar, 
