@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -28,7 +29,8 @@ import { IonicStorageModule } from '@ionic/storage';
     LoginPage,
     MenuClientePage,
     MenuEletricistaPage,
-    PedirservicoPage
+    PedirservicoPage,
+    ServicospassadosclientePage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { IonicStorageModule } from '@ionic/storage';
     LoginPage,
     MenuClientePage,
     MenuEletricistaPage,
-    PedirservicoPage
+    PedirservicoPage,
+    ServicospassadosclientePage
   ],
   providers: [
     StatusBar,

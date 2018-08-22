@@ -11,6 +11,7 @@ import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
 @Component({
   templateUrl: 'app.html'
