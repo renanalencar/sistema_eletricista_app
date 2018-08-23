@@ -1,97 +1,52 @@
 page-menu-cliente {
-    .amarelo{
-        background-color: yellow;
-        height: 2px;
+
+    ion-content {
+        font-family:'Ubuntu';
     }
-    .eletricista{
+
+    .myview{
+        background-image: url('../../assets/imgs/Mapa.png'); 
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .menu{
+        background: transparent;
+        color:black;
+        width: 15%;
+        height: 5%;
+        font-size: 240%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .servico{
+        border-radius: 50px;
+        color:white;
+        background-color: rgba(0, 0, 0, 0.89);
+        width: 50%;
         display: inline-block;
-        margin-top: 0px;
+        left:25%;
+        margin-top:3%;
     }
-    .verm{
-        display: inline-block;
-        color: red;
-        margin-top:-3px;
-    }
-    .voce{
-        font-size: 150%;
-        display: flex;
-        justify-content: center;
-    }
-    .butao{
-        border-radius: 100px;
-        width: 100px;
-        height: 100px;
-        background-color: #E7E7E7;
-        display: inline-block;
-        margin-left: 5%;
-        transform:translateY(90%);
-    }
-    .perfil{
-        color: #979797;
-        font-size: 730%;
-    }
-    .solicitar{
+    .bussu{
         color: black;
-        font-size: 500%;
-    }
-    .bperf{
-        background-color: #ffc82c;
-        border-radius: 100px;
-        width: 100px;
-        height: 100px;
+        background-color: white;
+        width: 10%;
         display: inline-block;
-        margin-left: 35%;
-        margin-right: 35%;
-        transform:translateY(90%);
-        
+        border-radius: 50%;
+        margin-top:3%;
+        left:28%;
     }
-    .bbulb{
-        background-color: #f5010b;
-        border-radius: 100px;
-        width: 100px;
-        height: 100px;
-        display: inline-block;
-        margin-left: 25%;
-        margin-right: 5%;
-        transform:translateY(90%);
-    }
-    .flash{
-        color: black;
-        font-size: 550%;
-    }
-    p{
-        display: inline-block;
-    }
-    .pperfil{
-        font-size: 115%;
-        margin-left: 10%;
-        margin-right: 36%;
-        margin-top: 10px;
-        transform:translateY(455%);
-    }
-    .pserv{
-        font-size: 115%;
-        margin-top: 10px;
-        transform:translateY(455%);
-    }
-    .psoli{
-        font-size: 115%;
-        margin-left: 33%;
-        margin-right: 33%;
-        transform:translateY(455%);
-    }
-    .pres{
-        font-size: 120%;
-        text-align: center;
-        transform:translateY(453%);
-    }
-    .img{
-        width: 20%;
-        display: inline-block;
-        float:right;
-    }
-    h1{
-        display: inline-block;
-        margin-right: 45%;
+    .baixo{
+        position:absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 10%;
+        bottom: 0px;
+        border-radius: 30% 30% 0 0;
+        left:0%;
+        right: 0%;
     }
 }

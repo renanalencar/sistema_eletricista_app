@@ -14,11 +14,17 @@ import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista'
 import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  selector: 'page-menu'
 })
 export class MyApp {
-  //rootPage:any = LoginPage;
-  rootPage:any = PedirservicoPage;
+
+  rootPage:any = MenuClientePage;
+
+  public paginas = [
+     {titulo: 'Perfil', componente: MenuClientePage },
+     {titulo: 'Histórico de serviços', componente: MenuClientePage }
+  ];
 
   constructor(platform: Platform, 
               statusBar: StatusBar, 
