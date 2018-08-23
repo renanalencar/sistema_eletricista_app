@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -7,11 +7,13 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
+import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+import { PerfilPage } from '../pages/perfil/perfil';
+
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
-import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
-import { PerfilPage } from '../pages/perfil/perfil';
+
 
 @Component({
   templateUrl: 'app.html',
@@ -19,12 +21,14 @@ import { PerfilPage } from '../pages/perfil/perfil';
 })
 export class MyApp {
 
-  rootPage:any = PerfilPage;
+  rootPage:any = MenuClientePage;
 
   public paginas = [
-     {titulo: 'Perfil', componente: MenuClientePage },
+     {titulo: 'Perfil', componente: PerfilPage },
      {titulo: 'Histórico de serviços', componente: MenuClientePage }
   ];
+
+  @ViewChild(Nav) public nav: Nav;
 
   constructor(platform: Platform, 
               statusBar: StatusBar, 
@@ -39,6 +43,11 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+  }
+
+  abrePagina(pagina): void {
+
+    this.nav.push(pagina.componente);
   }
 }
 
