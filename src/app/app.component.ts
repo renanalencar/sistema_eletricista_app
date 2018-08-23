@@ -11,6 +11,7 @@ import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 @Component({
   templateUrl: 'app.html',
@@ -18,7 +19,7 @@ import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista'
 })
 export class MyApp {
 
-  rootPage:any = MenuClientePage;
+  rootPage:any = PerfilPage;
 
   public paginas = [
      {titulo: 'Perfil', componente: MenuClientePage },
