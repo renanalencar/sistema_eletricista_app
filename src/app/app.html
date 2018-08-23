@@ -10,7 +10,7 @@
                 <img class ="imgperf" src="../assets/imgs/logo.png">
             </div>
             <p class="nome">Mario joaquim</p>
-            <button style=border:0px ion-item *ngFor="let pagina of paginas" menuClose>{{ pagina.titulo }}</button>
+            <button style=border:0px ion-item *ngFor="let pagina of paginas" menuClose (click)="abrePagina(pagina)">{{ pagina.titulo }}</button>
         </ion-list>
     </ion-content>
 </ion-menu>
