@@ -27,7 +27,7 @@ export class PedirservicoPage {
 
   constructor(public navCtrl: NavController, 
               public navParams: NavParams,
-              private providerCliente: ClienteProvider,
+              private provider_cliente: ClienteProvider,
               private loadingCtrl: LoadingController,
               private _alertCtrl: AlertController
             ) {
@@ -62,7 +62,7 @@ export class PedirservicoPage {
     this.servico.nome_cliente = this.nome_cliente;
     this.servico.nota = this.nota
 
-    this.providerCliente
+    this.provider_cliente
       .solicitarServico(this.servico)
       .then(resposta => {
         loader.dismiss();

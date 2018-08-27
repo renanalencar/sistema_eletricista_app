@@ -1,0 +1,35 @@
+page-servicospassadoscliente {
+
+    ion-content{
+        background: #ffea82  !important;
+        font-family:'Ubuntu';
+    }
+
+    ion-card-content{
+        padding-top: 1% !important;
+    }
+
+    ion-card-title {
+        font-weight: bold;
+    }
+
+    ion-card {
+        //border: 3px solid #000000 !important;
+        background-color: #fff2be !important;
+        //border-radius: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .titulo {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+    .botao {
+        background-color: #000000;
+        color: white;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+}

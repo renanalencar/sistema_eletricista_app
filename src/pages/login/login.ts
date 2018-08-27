@@ -19,4 +19,9 @@ export class LoginPage {
     public navParams: NavParams, 
     //private _service: UsuarioService, 
     private _alertCtrl: AlertController) {}
+
+
+  efetuaLogin(){
+    
+  }
   }

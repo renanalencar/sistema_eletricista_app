@@ -14,6 +14,7 @@ import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletri
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
+import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
 
 @Component({
