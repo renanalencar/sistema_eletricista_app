@@ -1,0 +1,57 @@
+page-pedido-eletricista {
+    .amarelo{
+        background-color: yellow;
+        height: 2px;
+    }
+    h2{
+        text-align: center;
+        font-size: 140%;
+        width: 65%;
+        margin-left: 17.5%;
+    }
+    .nome{
+        text-align: center;
+        font-size: 130%;
+    }
+    .descricao{
+        text-align: center;
+        font-size: 140%;
+        font-weight: bold;
+    }
+    .descri{
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 10%;
+    }
+    .img{
+        width: 50%;
+        display: inline-block;
+        margin-left: 25%;
+    }
+    .imga{
+        margin-top: 10%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .endereco{
+        text-align: center;
+        font-size: 150%;
+    }
+    .aceitar{
+        background-color: #029702;
+        color: white;
+        width: 30%;
+        display: inline-block;
+        margin-left: 10%;
+    }
+    .recusar{
+        background-color: red;;
+        color: white;
+        width: 30%;
+        display: inline-block;
+        margin-left: 15%;
+    }
+}
