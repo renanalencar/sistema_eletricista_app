@@ -1,7 +1,9 @@
 export class Usuario {
 	constructor(
-		public nome: string, 
-        public foto: string, 
-        public email: string
+		public first_name: string,
+		public email: string,
+		public password: string,
+		public username: string,
+		is_active: boolean
 	){}
 }

@@ -2,7 +2,9 @@ import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { NavParams, AlertController } from 'ionic-angular';
-import { Usuario } from '../classes/usuario'
+import { RespostaLogin } from '../classes/resposta_login'
+import { Dados } from '../classes/dados'
+import { Usuario} from '../classes/usuario'
 import 'rxjs/Rx';
 
 /*
@@ -14,17 +16,70 @@ import 'rxjs/Rx';
 @Injectable()
 export class LoginProvider {
 
-  private apiURL: string =  ''; //URL base da API, falta inserir o URL quando tivermos
-  private usuarioLogado: Usuario = null; //objeto do usuario atual
+  private apiURL: string =  'http://localhost:8000/api/login/'; //URL base da API, falta inserir o URL quando tivermos
+  private usuarioLogado: RespostaLogin; //objeto do usuario atual
   private token: string = null; //token unico do usuario
+  private dados: Dados; //objeto do usuario atual
+  private usuario: Usuario; //objeto do usuario atual
 
   constructor(public http: Http,private storage: Storage) {}
 
   /** Método que faz login e salva token de usuário caso tenha sucesso  **/
-  public efetuaLogin(email: string, senha: string){
-  	let url = this.apiURL + ''; //parametros para executar acao na api
-  	return new Promise<any>((resolve, reject) => {
-        //aqui entra o GET, mas como ainda nao temos a API, não tem como fazer essa parte
+  public efetuaLogin(user: string, senha: string){
+  	/*return new Promise<any>((resolve, reject) => {
+      this.http.post(this.apiURL, {
+        "username": user,
+        "password": senha
+        }
+      )
+      .subscribe(
+        res => {
+          //@todo Pega resposta do servidor. Se não teve erro, resolve(res), cria novo usuário, e salva token 
+          //Se teve erro, reject(res.mensagem)
+          console.log("resposta", res);
+          //dados enviados validos
+          //this.usuarioLogado = new RespostaLogin(res.token, res.cliente);
+          this.token = res.token;
+          this.dados = res.cliente;
+          //this.usuario = res.cliente.usuario;
+          console.log("token", this.token, "dados", this.dados, "usuario", this.usuario)
+          this.storage.set("user", user);
+          this.storage.set("senha", senha);
+          resolve(res);
+        },
+        err => {
+          //@todo Nesse caso, a requisição deu erro, e deve-se dar reject("Erro na requisição"); 
+          console.log("erro no login", err);
+          reject("Erro na requisição");
+        }
+      );
+    });*/
+    return this.http
+    .post(this.apiURL, {
+      "username": user,
+      "password": senha
+      }
+    )
+    .map(res => res.json())
+    .toPromise()
+    .then(res => {
+        //let usuario = new Usuario(dado.nome, dado.dataNascimento, dado.email, dado.telefone);
+        //this._usuarioLogado = usuario;
+        //return usuario;
+        console.log("resposta", res);
+        //dados enviados validos
+        //this.usuarioLogado = new RespostaLogin(res.token, res.cliente);
+        this.token = res.token;
+        this.dados = res.cliente;
+        //this.usuario = res.cliente.usuario;
+        console.log("token", this.token, "dados", this.dados)//, "usuario", this.usuario)
+        this.storage.set("user", user);
+        this.storage.set("senha", senha);
+        return this.dados.tipo;
+    })
+    .catch(err => {
+      console.log("erro no login", err);
+      return err;
     });
   }
 

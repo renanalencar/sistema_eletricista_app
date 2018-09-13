@@ -22,7 +22,7 @@ import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/se
 })
 export class MyApp {
 
-  rootPage:any = MenuClientePage;
+  rootPage:any = LoginPage;
 
   public paginas = [
      {titulo: 'Perfil', componente: PerfilPage },
