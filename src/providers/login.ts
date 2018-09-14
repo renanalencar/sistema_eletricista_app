@@ -21,6 +21,8 @@ export class LoginProvider {
   private token: string = null; //token unico do usuario
   private dados: Dados; //objeto do usuario atual
   private usuario: Usuario; //objeto do usuario atual
+  private resposta;
+  private cliente;
 
   constructor(public http: Http,private storage: Storage) {}
 
@@ -69,13 +71,18 @@ export class LoginProvider {
         console.log("resposta", res);
         //dados enviados validos
         //this.usuarioLogado = new RespostaLogin(res.token, res.cliente);
-        this.token = res.token;
+        //this.token = res.token;
         this.dados = res.cliente;
         //this.usuario = res.cliente.usuario;
-        console.log("token", this.token, "dados", this.dados)//, "usuario", this.usuario)
+        //console.log("token", this.token, "dados", this.dados)//, "usuario", this.usuario)
         this.storage.set("user", user);
         this.storage.set("senha", senha);
-        return this.dados.tipo;
+        this.resposta = {
+          token: res.token,
+          cliente: this.dados,
+        }
+        console.log(this.resposta)
+        return this.resposta;
     })
     .catch(err => {
       console.log("erro no login", err);

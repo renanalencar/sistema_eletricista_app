@@ -1,7 +1,7 @@
 page-servicospassadoscliente {
 
     ion-content{
-        background: #ffea82  !important;
+        background: #E9E9E9 !important;
         font-family:'Ubuntu';
     }
 
@@ -15,9 +15,16 @@ page-servicospassadoscliente {
 
     ion-card {
         //border: 3px solid #000000 !important;
-        background-color: #fff2be !important;
+        background-color: #fffefa !important;
         //border-radius: 10px !important;
         margin-bottom: 20px !important;
+        
+    }
+
+    .cartao {
+        margin: 0px !important;
+        margin-bottom: 10px !important;
+        width:100%;
     }
 
     .titulo {
@@ -27,9 +34,11 @@ page-servicospassadoscliente {
         margin-top: 2%;
     }
     .botao {
-        background-color: #000000;
-        color: white;
+        background-color: #ffde4d  !important;
+        color: rgb(0, 0, 0);
         font-weight: bold;
         margin-top: 5%;
+        border-radius: 0px;
+        border: 1px solid #000000 !important;
     }
 }

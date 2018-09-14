@@ -42,13 +42,13 @@ export class LoginPage {
 
     this.provider
       .efetuaLogin(this.email, this.senha)
-      .then(tipo => {
-        console.log("tipo", tipo);
-        if (tipo == "Cliente"){
-          this.navCtrl.setRoot(MenuClientePage);
+      .then(res => {
+        console.log("tipo", res.cliente.tipo);
+        if (res.cliente.tipo == "Cliente"){
+          this.navCtrl.setRoot(MenuClientePage, {DadosLogin: res});
           loader.dismiss();
-        } else if (tipo == "Eletricista"){
-          this.navCtrl.setRoot(MenuEletricistaPage);
+        } else if (res.cliente.tipo == "Eletricista"){
+          this.navCtrl.setRoot(MenuEletricistaPage, {DadosLogin: res});
           loader.dismiss();
         } else {
           loader.dismiss();

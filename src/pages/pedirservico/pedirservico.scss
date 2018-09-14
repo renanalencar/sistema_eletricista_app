@@ -1,16 +1,17 @@
 page-pedirservico {
     ion-content{
-        background: #ffea82  !important;
+        background: #E9E9E9 !important;
     }
     /*.form-servico ion-list{
         
     }*/
     .form-servico ion-input{
-        border: 3px solid #000000;
-        background-color: #fff2be;
-        border-radius: 10px;
+        border: 1px solid #000000;
+        background-color: #fffefa !important;
+        //border-radius: 10px;
         padding: 5px;
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .ion-title {
@@ -31,9 +32,11 @@ page-pedirservico {
     }
 
     .botao {
-        background-color: #000000;
-        color: white;
+        background-color:  #ffde4d  !important;
+        color: rgb(0, 0, 0);
         font-weight: bold;
+        border: 1px solid #000000;
+        border-radius: 0px;
     }
 
     .desc {
@@ -41,7 +44,7 @@ page-pedirservico {
     }
 
     .item {
-        background: #ffea82;
+        background: #E9E9E9 !important;
         border: 0px !important;
     }
 
@@ -58,4 +61,11 @@ page-pedirservico {
         border: 0px !important;
     }
 
+    .list {
+        margin-bottom: 0px !important;
+    }
+
+    .item-inner{
+        padding: 0px !important;
+    }
 }

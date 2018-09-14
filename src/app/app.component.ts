@@ -15,6 +15,7 @@ import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
 import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
+//import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
 @Component({
   templateUrl: 'app.html',
@@ -24,9 +25,11 @@ export class MyApp {
 
   rootPage:any = LoginPage;
 
+  
+
   public paginas = [
      {titulo: 'Perfil', componente: PerfilPage },
-     {titulo: 'Histórico de serviços', componente: MenuClientePage }
+     {titulo: 'Histórico de serviços', componente: ServicospassadosclientePage }
   ];
 
   @ViewChild(Nav) public nav: Nav;
@@ -36,7 +39,7 @@ export class MyApp {
               splashScreen: SplashScreen,
               provider_login: LoginProvider,
               provider_eletricista: EletricistaProvider,
-              provider_cliente: ClienteProvider
+              provider_cliente: ClienteProvider,
             ) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -47,7 +50,6 @@ export class MyApp {
   }
 
   abrePagina(pagina): void {
-
     this.nav.push(pagina.componente);
   }
 }

@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'menu-eletricista.html',
 })
 export class MenuEletricistaPage {
-
+  public dados;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.dados = this.navParams.get("DadosLogin")
   }
 
   ionViewDidLoad() {
