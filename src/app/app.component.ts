@@ -10,6 +10,7 @@ import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
 import { PerfilPage } from '../pages/perfil/perfil';
 import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
+import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -23,7 +24,7 @@ import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/se
 })
 export class MyApp {
 
-  rootPage:any = PedidoEletricistaPage;
+  rootPage:any = ServicoFinalizadoPage;
 
   public paginas = [
      {titulo: 'Perfil', componente: PerfilPage },
