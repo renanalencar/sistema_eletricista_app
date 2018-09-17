@@ -4,14 +4,6 @@ page-menu-cliente {
         font-family:'Ubuntu';
     }
 
-    .myview{
-        background-image: url('../../assets/imgs/Mapa.png'); 
-        width: 100%;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        overflow: hidden;
-    }
     .menu{
         background: transparent;
         color:black;
@@ -20,6 +12,10 @@ page-menu-cliente {
         font-size: 240%;
         padding-left: 10px;
         padding-right: 10px;
+        position: absolute !important;
+        top: 3%;
+        left: 3%;
+
     }
     .servico{
         border-radius: 50px;
@@ -48,5 +44,11 @@ page-menu-cliente {
         border-radius: 30% 30% 0 0;
         left:0%;
         right: 0%;
+    }
+    #mapa{
+        width: 100%;
+        height: 100%;
+        margin: 0 px;
+        padding: 0px;
     }
 }

@@ -25,6 +25,8 @@ import 'rxjs/add/operator/toPromise';
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 
+import { GoogleMaps } from '@ionic-native/google-maps';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -61,7 +63,8 @@ import { IonicStorageModule } from '@ionic/storage';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ClienteProvider,
     LoginProvider,
-    EletricistaProvider
+    EletricistaProvider,
+    GoogleMaps
   ]
 })
 export class AppModule {}
