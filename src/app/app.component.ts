@@ -24,7 +24,11 @@ import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/se
 })
 export class MyApp {
 
+<<<<<<< HEAD
   rootPage:any = ServicoFinalizadoPage;
+=======
+  rootPage:any = MenuClientePage;
+>>>>>>> mapa
 
   public paginas = [
      {titulo: 'Perfil', componente: PerfilPage },
