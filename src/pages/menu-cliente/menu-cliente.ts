@@ -1,4 +1,3 @@
-
 import { PedirservicoPage } from '../pedirservico/pedirservico';
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
@@ -6,6 +5,8 @@ import { GoogleMaps,
          GoogleMap,
          LatLng,
          GoogleMapsEvent } from '@ionic-native/google-maps';
+import { HttpClient } from '@angular/common/http';
+
 
 /**
  * Generated class for the MenuClientePage page.
@@ -27,9 +28,9 @@ export class MenuClientePage {
   longitude : any;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private _http: HttpClient) {
+    
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuClientePage');
     var eletricista = new google.maps.LatLng(-23.5793521, -46.641414);

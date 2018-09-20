@@ -17,10 +17,10 @@
   <h2>Está disponível? Temos um serviço para você!</h2>
   <div class="amarelo"><p>  </p></div>
   <div class="img"><img class="imga" src="../../assets/imgs/Lampada.jpg"></div>
-  <p class="nome">Pedro Luis</p>
+  <p class="nome">{{obj.usuario}}</p>
   <p class="descricao">Descrição:</p>
- <p class="descri">Nenhuma tomada na minha casa funciona</p> 
-  <p class="endereco">Rua pedro de alcantra</p>
-  <button class="aceitar" ion-button block type="submit">Aceitar</button>
-  <button class="recusar" ion-button block type="submit">Recusar</button>
+ <p class="descri">{{obj.necessidade}}</p> 
+  <p class="endereco">{{obj.endereco}}</p>
+  <button class="aceitar" ion-button block type="submit" (click)="aceitar()">Aceitar</button>
+  <button class="recusar" ion-button block type="submit" (click)="recusar()">Recusar</button>
 </ion-content>
