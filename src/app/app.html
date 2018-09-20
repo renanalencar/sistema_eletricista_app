@@ -9,7 +9,7 @@
             <div class="div">
                 <img class ="imgperf" src="../assets/imgs/logo.png">
             </div>
-            <p class="nome">{{dados}}</p>
+            <p class="nome">{{ nome }}</p>
             <button style=border:0px ion-item *ngFor="let pagina of paginas" menuClose (click)="abrePagina(pagina)">{{ pagina.titulo }}</button>
         </ion-list>
     </ion-content>

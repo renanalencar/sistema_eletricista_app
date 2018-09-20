@@ -4,6 +4,7 @@ import { MenuClientePage } from '../menu-cliente/menu-cliente'
 import { MenuEletricistaPage } from '../menu-eletricista/menu-eletricista';
 //import { UsuarioService } from '../../domain/usuario/usuario-service';
 import { LoginProvider } from '../../providers/login';
+import { Events } from 'ionic-angular';
 
 
 @Component({
@@ -21,7 +22,9 @@ export class LoginPage {
     //private _service: UsuarioService, 
     private _alertCtrl: AlertController,
     private _loadingCtrl: LoadingController,
-    private provider: LoginProvider) {}
+    private provider: LoginProvider,
+    public events: Events
+  ) {}
 
 
   efetuaLogin(){
@@ -44,6 +47,7 @@ export class LoginPage {
       .efetuaLogin(this.email, this.senha)
       .then(res => {
         console.log("tipo", res.cliente.tipo);
+        this.events.publish('user:created', res);
         if (res.cliente.tipo == "Cliente"){
           this.navCtrl.setRoot(MenuClientePage, {DadosLogin: res});
           loader.dismiss();

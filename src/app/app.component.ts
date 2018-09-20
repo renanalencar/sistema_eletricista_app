@@ -15,6 +15,8 @@ import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
 import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
+import { Events } from 'ionic-angular';
+
 //import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
 @Component({
@@ -25,7 +27,8 @@ export class MyApp {
 
   rootPage:any = LoginPage;
 
-  
+  nome : string = "oi medeiros";
+  foto : string = "tchau medeiros"
 
   public paginas = [
      {titulo: 'Perfil', componente: PerfilPage },
@@ -40,12 +43,19 @@ export class MyApp {
               provider_login: LoginProvider,
               provider_eletricista: EletricistaProvider,
               provider_cliente: ClienteProvider,
+              public events: Events,
             ) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+    });
+    events.subscribe('user:created', (user) => {
+      // user and time are the same arguments passed in `events.publish(user, time)`
+      console.log('Welcome', user);
+      this.nome = user.cliente.usuario.first_name;
+      //this.foto = user.cliente.foto;
     });
   }
 
