@@ -12,6 +12,8 @@ import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
 import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 import { PerfilPage } from '../pages/perfil/perfil';
+import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
+import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -24,6 +26,8 @@ import 'rxjs/add/operator/toPromise';
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 
+import { GoogleMaps } from '@ionic-native/google-maps';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -32,8 +36,10 @@ import { IonicStorageModule } from '@ionic/storage';
     MenuClientePage,
     MenuEletricistaPage,
     PedirservicoPage,
+    PerfilPage,
+    PedidoEletricistaPage,
     ServicospassadosclientePage,
-    PerfilPage
+    ServicoFinalizadoPage
   ],
   imports: [
     BrowserModule,
@@ -49,8 +55,10 @@ import { IonicStorageModule } from '@ionic/storage';
     MenuClientePage,
     MenuEletricistaPage,
     PedirservicoPage,
+    PerfilPage,
+    PedidoEletricistaPage,
     ServicospassadosclientePage,
-    PerfilPage
+    ServicoFinalizadoPage
   ],
   providers: [
     StatusBar,
@@ -58,7 +66,8 @@ import { IonicStorageModule } from '@ionic/storage';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ClienteProvider,
     LoginProvider,
-    EletricistaProvider
+    EletricistaProvider,
+    GoogleMaps
   ]
 })
 export class AppModule {}

@@ -2,7 +2,7 @@ page-login {
     .myview{
         background-image: url('../../assets/imgs/img.png');
         
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;   
         background-size:167%;
         background-position: center;
         
@@ -48,9 +48,6 @@ page-login {
     .item{
         transform:translateY(230%);
         border-radius: 10px;
-    }
-    .input-wrapper{
-        
     }
     .ion-imput{
         color:black;
