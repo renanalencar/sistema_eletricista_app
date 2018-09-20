@@ -24,4 +24,5 @@ export class LoginPage {
   efetuaLogin(){
     
   }
-  }
+
+}

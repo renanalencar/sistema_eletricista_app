@@ -1,11 +1,17 @@
 page-menu-cliente {
+    #mapa {
+        height: 120%;
+        width: 120%;
+        margin: 0px;
+        padding: 0px;
+    }
 
     ion-content {
         font-family:'Ubuntu';
     }
 
     .myview{
-        background-image: url('../../assets/imgs/Mapa.png'); 
+        //background-image: url('../../assets/imgs/Mapa.png'); 
         width: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
