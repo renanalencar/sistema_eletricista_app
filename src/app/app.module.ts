@@ -16,6 +16,7 @@ import { PerfilPage } from '../pages/perfil/perfil';
 import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
 import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
 import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
+import { ServicoIniciadoPage } from '../pages/servico-iniciado/servico-iniciado';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -43,7 +44,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     PedidoEletricistaPage,
     ServicospassadosclientePage,
     ServicoFinalizadoPage,
-    IniciarServicoPage
+    IniciarServicoPage,
+    ServicoIniciadoPage
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     PedidoEletricistaPage,
     ServicospassadosclientePage,
     ServicoFinalizadoPage,
-    IniciarServicoPage
+    IniciarServicoPage,
+    ServicoIniciadoPage
   ],
   providers: [
     Geolocation,

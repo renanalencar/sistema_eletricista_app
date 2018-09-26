@@ -12,11 +12,13 @@ import { PerfilPage } from '../pages/perfil/perfil';
 import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
 import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
 import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
+import { ServicoIniciadoPage } from '../pages/servico-iniciado/servico-iniciado';
+import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
-import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
+
 
 import { Events } from 'ionic-angular';
 
@@ -28,7 +30,7 @@ import { Events } from 'ionic-angular';
 })
 export class MyApp {
 
-  rootPage:any = IniciarServicoPage;
+  rootPage:any = ServicoIniciadoPage;
 
   nome : string = "oi medeiros";
   foto : string = "tchau medeiros"
