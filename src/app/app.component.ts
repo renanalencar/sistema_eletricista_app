@@ -11,6 +11,7 @@ import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista'
 import { PerfilPage } from '../pages/perfil/perfil';
 import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
 import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
+import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -27,7 +28,7 @@ import { Events } from 'ionic-angular';
 })
 export class MyApp {
 
-  rootPage:any = LoginPage;
+  rootPage:any = IniciarServicoPage;
 
   nome : string = "oi medeiros";
   foto : string = "tchau medeiros"

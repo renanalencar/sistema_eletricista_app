@@ -15,6 +15,7 @@ import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/se
 import { PerfilPage } from '../pages/perfil/perfil';
 import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
 import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
+import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -41,7 +42,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     PerfilPage,
     PedidoEletricistaPage,
     ServicospassadosclientePage,
-    ServicoFinalizadoPage
+    ServicoFinalizadoPage,
+    IniciarServicoPage
   ],
   imports: [
     BrowserModule,
@@ -61,11 +63,11 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     PerfilPage,
     PedidoEletricistaPage,
     ServicospassadosclientePage,
-    ServicoFinalizadoPage
+    ServicoFinalizadoPage,
+    IniciarServicoPage
   ],
   providers: [
     Geolocation,
-    NetworkInterface,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

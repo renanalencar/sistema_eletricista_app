@@ -21,12 +21,9 @@
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
     "@ionic-native/core": "~4.10.0",
-<<<<<<< HEAD
     "@ionic-native/google-maps": "^4.13.0",
-=======
     "@ionic-native/geolocation": "^4.13.0",
     "@ionic-native/network-interface": "^4.13.0",
->>>>>>> app_rola
     "@ionic-native/splash-screen": "~4.10.0",
     "@ionic-native/status-bar": "~4.10.0",
     "@ionic/pro": "2.0.3",
