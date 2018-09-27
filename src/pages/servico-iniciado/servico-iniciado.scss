@@ -20,6 +20,11 @@ page-servico-iniciado {
     .descricao{
         font-size: 1000%;
     }
+    .card{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .cartao {
         margin: 0px !important;
         margin-bottom: 10px !important;
@@ -27,7 +32,7 @@ page-servico-iniciado {
          //border: 3px solid #000000 !important;
          background-color: #fffefa !important;
          //border-radius: 10px !important;
-         height: 70%;
+         height: 75%;
     }
     .titulo{
         text-align: center;
@@ -47,17 +52,32 @@ page-servico-iniciado {
     .descricao{
         font-size: 120%;
         text-align: center;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
+    }
+    .menu{
+        background: transparent;
+        color:black;
+        width: 15%;
+        height: 5%;
+        font-size: 240%;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute !important;
+        top: 3%;
+        left: 3%;
+
     }
     .divimg{
-        width: 35%;
+        width: 126px;
+        height: 126px !important;
         display: inline-block;
         margin-top: 5%;
         margin-left: 32.5%;
         margin-right: 32.5%;
     }
     .img{
-        width: 100%;
+        width: 126px;
+        height: 126px ;
         border-radius: 50%;
         margin-bottom: 15%;
         display: inline-block;
@@ -71,6 +91,11 @@ page-servico-iniciado {
         margin-right: 8%;
         margin-top:20%;
         background-color: red;
+    }
+    .preto{
+        background-color: #f4bc16;
+        width: 100%;
+        border-bottom: 2px black solid;
     }
     .pausar{
         width: 30%;
