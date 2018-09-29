@@ -30,7 +30,7 @@ import { Events } from 'ionic-angular';
 })
 export class MyApp {
 
-  rootPage:any = ServicoIniciadoPage;
+  rootPage:any = IniciarServicoPage;
 
   nome : string = "oi medeiros";
   foto : string = "tchau medeiros"
