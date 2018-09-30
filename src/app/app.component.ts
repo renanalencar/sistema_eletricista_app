@@ -18,6 +18,7 @@ import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/se
 //Paginas Eletricista
 import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+import { IniciarServicoElePage } from '../pages/iniciar-servico-ele/iniciar-servico-ele';
 
 //Providers
 import { ClienteProvider } from '../../src/providers/cliente';
@@ -35,7 +36,7 @@ import { Events } from 'ionic-angular';
 })
 export class MyApp {
 
-  rootPage:any = ServicoIniciadoPage;
+  rootPage:any = IniciarServicoElePage;
 
   nome : string = "oi medeiros";
   foto : string = "tchau medeiros"
