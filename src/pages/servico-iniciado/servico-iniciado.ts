@@ -21,5 +21,12 @@ export class ServicoIniciadoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ServicoIniciadoPage');
   }
-
+  status: boolean = false;
+  DeixaTrue(){
+      this.status = true;  
+  }
+  DeixaFalse(){
+    this.status = false;
+  }
 }
+

@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content >
+<ion-content class="no-scroll" >
     <button class="menu" ion-button  menuToggle><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>  
   <div class="preto">  
       <div class="divimg">
@@ -32,7 +32,13 @@
         <p class="descricao">Lampada quebrada e dijuntor mal contato</p>
       
     <button class="finalizar" ion-button block type="submit">Finalizar</button>
-    <button class="pausar" ion-button block type="submit">Pausar</button>
+    <button class="pausar" (click)="DeixaTrue()" ion-button block type="submit">Pausar</button>
   </ion-card-content> 
+
+  
 </ion-card>
+<div [ngClass]="status ? 'aparente' : 'box'">
+  <p class="seu">Seu serviço foi pausado!</p>
+  <button class="continuar" ion-button block type="submit" (click)="DeixaFalse()">Continuar</button>
+</div>
 </ion-content>

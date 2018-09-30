@@ -5,16 +5,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+
+//Paginas Cliente
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
-import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
 import { PerfilPage } from '../pages/perfil/perfil';
-import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
-import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
 import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
 import { ServicoIniciadoPage } from '../pages/servico-iniciado/servico-iniciado';
+import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
 import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
+//Paginas Eletricista
+import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
+import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+
+//Providers
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';

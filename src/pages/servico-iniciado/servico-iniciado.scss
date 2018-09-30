@@ -107,4 +107,39 @@ page-servico-iniciado {
         margin-top:20%;
         background-color: #f4bc16;
     }
+    .seu{
+        text-align: center;
+        font-size: 150%;
+        margin-top: 5%;
+    }
+    .continuar{
+        width: 30%;
+        display: inline-block;
+        font-size: 100%;
+        margin-bottom: 10%;
+        margin-right: 35%;
+        margin-left: 35%;
+        background-color: #f4bc16;
+    }
+    .box{
+        background-color: #fffefa;
+        border: black solid 2px; 
+        padding-top: 5%;
+        width: 80%;
+        margin-left: 10%;
+        position: absolute;
+        bottom:-100%;
+    }
+    .aparente{
+        background-color: #fffefa;
+        border: black solid 2px; 
+        padding-top: 5%;
+        width: 80%;
+        margin-left: 10%;
+        position: absolute;
+        top: 40%;
+    }
+    .no-scroll .scroll-content{
+        overflow: hidden;
+      }
 }
