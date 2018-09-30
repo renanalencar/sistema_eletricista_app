@@ -74,13 +74,13 @@ export class MenuEletricistaPage {
       }
     });
 
-    setInterval(() => {var url = 'http://localhost:8000/api/coords/' + this.user + '/' //pegar o 'this.user' logado no app
-    let postData = new FormData()
-    postData.append('lat', this.lat) 
-    postData.append('lng', this.lng)
-    console.log(postData)
-    this._http.patch(url, postData)
-    .subscribe((data) => {console.log(data)})}, 10000)
+    //setInterval(() => {var url = 'http://localhost:8000/api/coords/' + this.user + '/' //pegar o 'this.user' logado no app
+    //let postData = new FormData()
+    //postData.append('lat', this.lat) 
+    //postData.append('lng', this.lng)
+    //console.log(postData)
+    //this._http.patch(url, postData)
+    //.subscribe((data) => {console.log(data)})}, 10000)
 
 
     observador.subscribe((data) => {

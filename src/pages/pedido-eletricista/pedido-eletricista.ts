@@ -45,13 +45,19 @@ export class PedidoEletricistaPage {
   	this.obj['pedido_status'] = true
     console.log(this.obj)
   	this.ws.send(JSON.stringify(this.obj))
-  	this.navCtrl.push(MenuClientePage, this.obj)
+    var websocket = {
+      ws : this.ws
+    }
+  	this.navCtrl.push(MenuClientePage, websocket)
   }
   recusar() {
     console.log('recusou');
     this.obj['pedido_enviado'] = false
     this.ws.send(JSON.stringify(this.obj))
-    this.navCtrl.push(MenuEletricistaPage, this.obj)
+    var websocket = {
+      ws : this.ws
+    }
+    this.navCtrl.push(MenuEletricistaPage, websocket)
   }
 
 
