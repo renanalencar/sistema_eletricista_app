@@ -72,7 +72,11 @@ export class LoginProvider {
         //dados enviados validos
         //this.usuarioLogado = new RespostaLogin(res.token, res.cliente);
         //this.token = res.token;
-        this.dados = res.cliente;
+        if(res.cliente){
+          this.dados = res.cliente;
+        } else if(res.eletricista){
+          this.dados = res.eletricista;
+        }
         //this.usuario = res.cliente.usuario;
         //console.log("token", this.token, "dados", this.dados)//, "usuario", this.usuario)
         this.storage.set("user", user);
