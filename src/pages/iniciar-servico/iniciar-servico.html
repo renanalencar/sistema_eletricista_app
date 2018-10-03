@@ -1,0 +1,33 @@
+<!--
+  Generated template for the IniciarServicoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>iniciar-servico</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="myview" class="no-scroll">
+  <div id="mapa" #mapa (click)="DeixaFalse()"></div>
+  <button class="menu" ion-button  menuToggle><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+  <div class="baixo" (click)="DeixaTrue()">
+    <p class="aguarde">Aguardando eletricista...</p>
+    <p class="clique">Clique para detalhes do serviço</p>
+  </div>  
+  <div [ngClass]="status ? 'ativa' : 'extendido'">
+      <div class="divimg">
+          <img class ="img" src="../assets/imgs/LogoE.png">
+      </div>
+    <p class="nome">Nome eletricista</p>
+    <p class="nota">Nota: 4.3</p>
+    <button class="comecar" ion-button block type="submit">Começar</button>
+    <button class="cancelar" ion-button block type="submit">Cancelar</button>
+  </div>
+</ion-content>
+>

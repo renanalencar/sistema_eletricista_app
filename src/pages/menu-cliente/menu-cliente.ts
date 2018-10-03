@@ -1,4 +1,3 @@
-
 import { PedirservicoPage } from '../pedirservico/pedirservico';
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
@@ -6,6 +5,8 @@ import { GoogleMaps,
          GoogleMap,
          LatLng,
          GoogleMapsEvent } from '@ionic-native/google-maps';
+import { HttpClient } from '@angular/common/http';
+import { Observable, Subject } from 'rxjs';
 
 /**
  * Generated class for the MenuClientePage page.
@@ -22,16 +23,49 @@ declare var google: any;
 })
 export class MenuClientePage {
   @ViewChild('mapa') mapElement: ElementRef;
+  @ViewChild('iniciarservico') buttonElement: ElementRef;
+
+  
   map: any;
-  latitude: any;
-  longitude : any;
+  public lat;
+  public lng;
+  public ws;
+  public resposta_cliente;
+  public resposta_eletricista;
+  
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private _http: HttpClient) {
+    this.ws = this.navParams.get('ws')
+    console.log('eu sou ws', this.ws)
   }
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MenuClientePage');
+    
+    let observador = Observable.create(observer => {
+      this.ws.onmessage = function(e) {
+        console.log(JSON.parse(e.data));
+        var data = JSON.parse(e.data)
+        this.resposta_cliente = data['pedido_resposta_cliente']
+        this.resposta_eletricista = data['pedido_resposta_eletricista']
+
+        observer.next(data)
+        if(data['pedido_resposta_cliente'] == true && data['pedido_resposta_eletricista'] == true) {
+          var i = 1;
+          setInterval(function(){
+            console.log(i++)
+            let botao = document.getElementById('iniciarservico')
+            botao.textContent = 'Tempo: ' + i;
+          }, 2000)
+        }
+      }
+    });
+
+    observador.subscribe((data) => {
+      this.resposta_cliente = data['pedido_resposta_cliente']
+      this.resposta_eletricista = data['pedido_resposta_eletricista']
+    });
+
     var eletricista = new google.maps.LatLng(-23.5793521, -46.641414);
     var cliente = new google.maps.LatLng(-23.5761596, -46.6464069);
     let mapOptions = {
@@ -46,6 +80,13 @@ export class MenuClientePage {
     }
 
     this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+    
+    
+    var botao = document.getElementById('iniciarservico')
+
+    console.log(botao)
+    console.log('ionViewDidLoad MenuClientePage', this.map);
+    //var marker = new google.maps.Marker({position : mapOptions.center, map : this.map});
     var dirdisplay = new google.maps.DirectionsRenderer();
     var dirservice = new google.maps.DirectionsService();
     dirdisplay.setMap(this.map)
@@ -54,10 +95,10 @@ export class MenuClientePage {
       destination: cliente,
       travelMode:'WALKING',
     };
-    dirservice.route(request, function(response, status){
-      console.log(status);
+    //var dir = new google.maps.DirectionsService();
+    dirservice.route(request, function(response, status) {
       if(status == 'OK'){
-        console.log(response);
+        //var dis = new google.maps.DirectionsRenderer();
         dirdisplay.setDirections(response);
       }
     });
@@ -67,4 +108,20 @@ export class MenuClientePage {
     this.navCtrl.push(PedirservicoPage);
   }
   
+  iniciar() {
+    console.log('iniciado')
+    let botao = document.getElementById('iniciarservico')
+    botao.textContent = 'Aguardando Cliente'
+    if(this.resposta_cliente == undefined) {
+      this.resposta_cliente = false;
+    }
+    this.ws.send(JSON.stringify({
+      pedido_status : true,
+      pedido_resposta_eletricista : true,
+      pedido_resposta_cliente : this.resposta_cliente
+    }))
+  }
+  recusar() {
+    console.log('recusado')
+  }
 }

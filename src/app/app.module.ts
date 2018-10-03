@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -14,6 +15,8 @@ import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/se
 import { PerfilPage } from '../pages/perfil/perfil';
 import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
 import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
+import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
+import { ServicoIniciadoPage } from '../pages/servico-iniciado/servico-iniciado';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -25,6 +28,7 @@ import 'rxjs/add/operator/toPromise';
 
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
+import { Geolocation } from '@ionic-native/geolocation';
 
 import { GoogleMaps } from '@ionic-native/google-maps';
 
@@ -39,13 +43,16 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     PerfilPage,
     PedidoEletricistaPage,
     ServicospassadosclientePage,
-    ServicoFinalizadoPage
+    ServicoFinalizadoPage,
+    IniciarServicoPage,
+    ServicoIniciadoPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpModule,
     IonicStorageModule.forRoot(),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -58,9 +65,12 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     PerfilPage,
     PedidoEletricistaPage,
     ServicospassadosclientePage,
-    ServicoFinalizadoPage
+    ServicoFinalizadoPage,
+    IniciarServicoPage,
+    ServicoIniciadoPage
   ],
   providers: [
+    Geolocation,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

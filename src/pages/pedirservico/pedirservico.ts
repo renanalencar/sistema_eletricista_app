@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, AlertController, Alert } from 'ionic-angular';
 import { ClienteProvider } from '../../providers/cliente';
 import { Chamado } from '../../classes/chamado';
-
+import { IniciarServicoPage } from '../iniciar-servico/iniciar-servico';
 
 /**
  * Generated class for the PedirservicoPage page.
@@ -66,7 +66,7 @@ export class PedirservicoPage {
       .solicitarServico(this.servico)
       .then(resposta => {
         loader.dismiss();
-        //mudar para proxima pagina (navctrl)
+        this.navCtrl.push(IniciarServicoPage);
       })
       .catch(()=> {
         loader.dismiss();
@@ -81,5 +81,4 @@ export class PedirservicoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PedirservicoPage');
   }
-
 }

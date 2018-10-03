@@ -5,17 +5,25 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+
+//Paginas Cliente
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
-import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
 import { PerfilPage } from '../pages/perfil/perfil';
-import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
+import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
+import { ServicoIniciadoPage } from '../pages/servico-iniciado/servico-iniciado';
 import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-finalizado';
+import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
 
+//Paginas Eletricista
+import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
+import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
+
+//Providers
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
-import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/servicospassadoscliente';
+
 
 import { Events } from 'ionic-angular';
 
@@ -27,7 +35,7 @@ import { Events } from 'ionic-angular';
 })
 export class MyApp {
 
-  rootPage:any = LoginPage;
+  rootPage:any = ServicoIniciadoPage;
 
   nome : string = "oi medeiros";
   foto : string = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg/200px-Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg";

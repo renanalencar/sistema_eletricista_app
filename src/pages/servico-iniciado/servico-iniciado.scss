@@ -1,0 +1,145 @@
+page-servico-iniciado {
+    ion-content{
+        background: #E9E9E9 !important;
+    }
+
+    .content{
+        padding-top: 1% !important;
+    }
+
+    ion-card-title {
+        font-weight: bold;
+    }
+    .cart{
+        width:100%;
+        margin: 0px !important;
+        margin-bottom: 10px !important;
+        width:100%;
+        background-color: #fffefa !important;
+    }
+    .descricao{
+        font-size: 1000%;
+    }
+    .card{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .cartao {
+        margin: 0px !important;
+        margin-bottom: 10px !important;
+        width:100%;
+         //border: 3px solid #000000 !important;
+         background-color: #fffefa !important;
+         //border-radius: 10px !important;
+         height: 75%;
+    }
+    .titulo{
+        text-align: center;
+        font-size: 170%;
+        margin-top: 10%;
+    }
+    .nome{
+        font-size: 150% !important;
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .nota{
+        font-size: 150% !important;
+        text-align: center;
+    }
+    .descricao{
+        font-size: 120%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .menu{
+        background: transparent;
+        color:black;
+        width: 15%;
+        height: 5%;
+        font-size: 240%;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute !important;
+        top: 3%;
+        left: 3%;
+
+    }
+    .divimg{
+        width: 126px;
+        height: 126px !important;
+        display: inline-block;
+        margin-top: 5%;
+        margin-left: 32.5%;
+        margin-right: 32.5%;
+    }
+    .img{
+        width: 126px;
+        height: 126px ;
+        border-radius: 50%;
+        margin-bottom: 15%;
+        display: inline-block;
+    }
+    .finalizar{
+        width: 30%;
+        display: inline-block;
+        font-size: 100%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 8%;
+        margin-top:20%;
+        background-color: red;
+    }
+    .preto{
+        background-color: #f4bc16;
+        width: 100%;
+        border-bottom: 2px black solid;
+    }
+    .pausar{
+        width: 30%;
+        display: inline-block;
+        font-size: 100%;
+        margin-bottom: 10%;
+        margin-right: 10%;
+        margin-left: 8%;
+        margin-top:20%;
+        background-color: #f4bc16;
+    }
+    .seu{
+        text-align: center;
+        font-size: 150%;
+        margin-top: 5%;
+    }
+    .continuar{
+        width: 30%;
+        display: inline-block;
+        font-size: 100%;
+        margin-bottom: 10%;
+        margin-right: 35%;
+        margin-left: 35%;
+        background-color: #f4bc16;
+    }
+    .box{
+        background-color: #fffefa;
+        border: black solid 2px; 
+        padding-top: 5%;
+        width: 80%;
+        margin-left: 10%;
+        position: absolute;
+        bottom:-100%;
+    }
+    .aparente{
+        background-color: #fffefa;
+        border: black solid 2px; 
+        padding-top: 5%;
+        width: 80%;
+        margin-left: 10%;
+        position: absolute;
+        top: 40%;
+    }
+    .no-scroll .scroll-content{
+        overflow: hidden;
+      }
+}
