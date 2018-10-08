@@ -39,7 +39,10 @@ export class MyApp {
   rootPage:any = IniciarServicoElePage;
 
   nome : string = "oi medeiros";
-  foto : string = "tchau medeiros"
+  foto : string = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg/200px-Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg";
+  email : string = "erro@erro.com";
+  endereco : string = "R. Erro, 123";
+  telefone : string = "000000000"
 
   public paginas = [
      {titulo: 'Perfil', componente: PerfilPage },
@@ -66,12 +69,21 @@ export class MyApp {
       // user and time are the same arguments passed in `events.publish(user, time)`
       console.log('Welcome', user);
       this.nome = user.cliente.usuario.first_name;
+      this.endereco = user.cliente.endereco;
+      this.telefone = user.cliente.telefone;
+      this.email = user.cliente.usuario.email;
       //this.foto = user.cliente.foto;
     });
   }
 
   abrePagina(pagina): void {
-    this.nav.push(pagina.componente);
+    this.nav.push(pagina.componente,{
+      nome: this.nome,
+      foto: this.foto,
+      endereco: this.endereco,
+      telefone: this.telefone,
+      email: this.email,
+    });
   }
 }
 

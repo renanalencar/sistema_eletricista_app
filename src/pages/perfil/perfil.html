@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>perfil</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,15 +15,15 @@
 
 <ion-content class="fundo" padding>
 <div class="card2">
-<div class="divi"><img class="divimg" src="https://www.aprenderexcel.com.br//imagens/post/385/2901-1.jpg"></div>
-<h2>Barbara da Silva Bertioli</h2>
+<div class="divi"><img class="divimg" [src]="foto"></div>
+<h2>{{ nome }}</h2>
 </div>
 <div class="card">
   <div class="container">
   <p class ="info">Informações Gerais</p>
-    <p class="endereco"><ion-icon class="casa" ios="ios-home" md="md-home"></ion-icon>Avenida Politecnica,728</p>
-  <p class="numero"><ion-icon class="celular" ios="ios-call" md="md-call"></ion-icon>(11)99999-9999</p>
-  <p class ="email"><ion-icon class="carta" ios="ios-mail" md="md-mail"></ion-icon>sashahs@shh.com</p>
+    <p class="endereco"><ion-icon class="casa" ios="ios-home" md="md-home"></ion-icon>{{ endereco }}</p>
+  <p class="numero"><ion-icon class="celular" ios="ios-call" md="md-call"></ion-icon>{{ telefone }}</p>
+  <p class ="email"><ion-icon class="carta" ios="ios-mail" md="md-mail"></ion-icon>{{ email }}</p>
   </div>
 </div>
 <div class="card3">

@@ -7,7 +7,7 @@
     <ion-content padding>
         <ion-list inset>
             <div class="divz">
-                <img class ="imgperf" src="../assets/imgs/logo.png">
+                <img [src]="foto">
             </div>
             <p class="nome">{{ nome }}</p>
             <button style=border:0px ion-item *ngFor="let pagina of paginas" menuClose (click)="abrePagina(pagina)">{{ pagina.titulo }}</button>
