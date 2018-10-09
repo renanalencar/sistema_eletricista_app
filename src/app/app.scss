@@ -1,6 +1,10 @@
 page-menu{
+    .ion-content{
+        font-family: 'ubuntu';
+    }
     .imgperf{
-        width: 100%;
+        width: 84px;
+        height: 84px;
         border-radius: 50%;
         margin-bottom: 30%;
         display: inline-block;
@@ -10,6 +14,16 @@ page-menu{
         width: 35%;
         display: inline-block;
         font-family:'Ubuntu';
+    }
+    .logout{
+        bottom: 5%;
+        margin-left: 10%;
+        position: absolute;
+        font-size: 140%;
+    }
+    .icone{
+        font-size: 130%;
+        color:#f4bc16;
     }
     .nomez{
         display:inline-block;
