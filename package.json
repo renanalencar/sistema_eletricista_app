@@ -20,8 +20,12 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+<<<<<<< HEAD
     "@ionic-native/core": "^4.10.1",
     "@ionic-native/geolocation": "^4.15.0",
+=======
+    "@ionic-native/core": "~4.10.0",
+>>>>>>> 3ab6ec9b854d45134bc50afc5d5ae501f68f0a21
     "@ionic-native/google-maps": "^4.13.0",
     "@ionic-native/network-interface": "^4.13.0",
     "@ionic-native/splash-screen": "~4.10.0",
