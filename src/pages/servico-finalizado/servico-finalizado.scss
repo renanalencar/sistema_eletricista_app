@@ -1,4 +1,8 @@
 page-servico-finalizado {
+    ion-content{
+        background: #E9E9E9 !important;
+        font-family:'Ubuntu';
+    }
     h1{
         text-align: center;
         font-size: 120%;
@@ -9,71 +13,68 @@ page-servico-finalizado {
         background-color: yellow;
         height: 2px;
     }
+
     .detalhe{
         text-align: center;
         font-size: 130%;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         font-weight: bold;
+        margin-top: 0%;
     }
+
     .img{
-        width: 35%;
-        display: inline-block;
-        margin-left: 0%;
+        text-align: center;
     }
+
     .imga{
-        margin-top: 10%;
-        width: 100%;
-        height: 100%;
+        margin-top: 3%;
+        width: 30%;
+        height: 30%;
         border-radius: 50%;
         display: inline-block;
     }
     .nome{
-        display: inline-block;
+        display: block;
+        text-align: center;
         margin-left: 20%;
-        transform:translateY(-480%);
         margin-right: 15%;
-        font-size: 130%;
+        font-size: 20px;
         margin-bottom: 0%;
     }
     .data{
-        display: inline-block;
-        margin-left: 50%;
-        transform:translateY(-480%);
-        margin-right: 10%;
-        width: 40%;
+        display: block;
+        text-align: center;
         font-size: 130%;
         margin-bottom: 0%;
     }
     .preço{
-        display: inline-block;
-        margin-left: 60%;
-        transform:translateY(-480%);
-        margin-right: 20%;
-        width: 20%;
+        display: block;
+        text-align: center;
         font-size: 130%;
     }
     .tempo{
-        font-size: 130%;
+        font-size: 100%;
         text-align: center;
-        font-weight: bold;
-        transform:translateY(-400%);
+        //font-weight: bold;
     }
     .relatorio{
         text-align: center;
-        font-size: 110%;
+        font-size: 80%;
         text-decoration: underline;
-        transform:translateY(-400%);
+        //transform:translateY(-400%);
     }
     .qual{
         text-align: center;
-        font-size: 150%;
+        font-size: 120%;
         font-weight: bold;
-        transform:translateY(-270%);
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     .deixe{
-        font-size: 150%;
+        font-size: 130%;
         font-weight: bold;
         text-align: center;
+        margin-bottom: 4%;
     }
     .item{
         height: 200% !important;
@@ -83,17 +84,62 @@ page-servico-finalizado {
         border: 2px solid black;
         padding-left:5%;
     }
-    ion-item{
-        
+    .item-inner{
+        border-bottom: 0px !important;
     }
-    form{
-       
+
+    .titulo{
+        background-color: #ffde4d  !important;
+        color: rgb(0, 0, 0);
+        border-radius: 3px;
+        border: 0px solid #000000 !important;
+        height: 15% !important;
     }
+
+    .estrela{
+        text-align: center;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+
+    .meio{
+        background-color: #ffffff  !important;
+        color: rgb(0, 0, 0);
+        border-radius: 3px;
+        border: 0px solid #000000 !important;
+        height: 33% !important;
+        margin-top: 5%;
+        display: inline;
+    }
+
+    .meio2{
+        background-color: #ffffff  !important;
+        color: rgb(0, 0, 0);
+        border-radius: 3px;
+        border: 0px solid #000000 !important;
+        height: 13% !important;
+        margin-top: 5%;
+        display: inline;
+    }
+
+    .meio3{
+        background-color: #ffffff  !important;
+        color: rgb(0, 0, 0);
+        border-radius: 3px;
+        border: 0px solid #000000 !important;
+        height: 28% !important;
+        margin-top: 5%;
+        display: inline;
+    }
+
     .enviar{
         width: 75%;
         margin-left: 12.5%;
-        background-color: rgb(241, 241, 0);
-        color:rgba(59, 59, 59, 0.96);
-        margin-top: 10%;
+        background-color: #ffde4d  !important;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        margin-top: 5%;
+        border-radius: 5px;
+        //border: 1px solid #000000 !important;
     }
 }

@@ -1,0 +1,13 @@
+expandable {
+
+    .expand-wrapper {
+        height: 0px;
+        transition: 0.2s linear;
+        text-align: center;
+    }  
+
+    .collapsed {
+        height: 0 !important;
+    }
+
+}

@@ -42,7 +42,7 @@ export class MenuClientePage {
   }
   ionViewDidLoad() {
     
-    let observador = Observable.create(observer => {
+    /*let observador = Observable.create(observer => {
       this.ws.onmessage = function(e) {
         console.log(JSON.parse(e.data));
         var data = JSON.parse(e.data)
@@ -64,7 +64,7 @@ export class MenuClientePage {
     observador.subscribe((data) => {
       this.resposta_cliente = data['pedido_resposta_cliente']
       this.resposta_eletricista = data['pedido_resposta_eletricista']
-    });
+    });*/
 
     var eletricista = new google.maps.LatLng(-23.5793521, -46.641414);
     var cliente = new google.maps.LatLng(-23.5761596, -46.6464069);

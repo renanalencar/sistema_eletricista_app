@@ -23,6 +23,8 @@ import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
 import { UsuarioService } from '../domain/usuario/usuario-service';
 
+import { ExpandableComponent} from '../components/expandable/expandable';
+
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
@@ -45,7 +47,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     ServicospassadosclientePage,
     ServicoFinalizadoPage,
     IniciarServicoPage,
-    ServicoIniciadoPage
+    ServicoIniciadoPage,
+    ExpandableComponent
   ],
   imports: [
     BrowserModule,

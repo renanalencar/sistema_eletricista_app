@@ -6,6 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 
+import { ExpandableComponent} from '../components/expandable/expandable';
+
 //Paginas Cliente
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
@@ -35,7 +37,7 @@ import { Events } from 'ionic-angular';
 })
 export class MyApp {
 
-  rootPage:any = ServicoIniciadoPage;
+  rootPage:any = MenuEletricistaPage;
 
   nome : string = "oi medeiros";
   foto : string = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg/200px-Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg";

@@ -1,29 +1,106 @@
 page-menu-eletricista {
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    .titulo{
+        text-align: center !important;
+        display: block;
+    }
+    ion-content{
+        background: #E9E9E9 !important;
+        font-family:'Ubuntu';
     }
 
-    /* Modal Content/Box */
+    .h3{
+        text-align: end;
+        margin-top: 1% !important;
+        text-decoration: underline;
+    }
+
+    .ios, .md {
+        page-home {
+            button {
+                align-items: baseline;
+            }
+        }
+    }
+
+    .card{
+        margin: 0%;
+        margin-left: 0px;
+        width: 100%;
+        //border-radius: 5%;
+        height: 16% !important;
+        font-size: 150%;
+        display: block;
+        position: relative;
+    }
+
+    .agoravai{
+        margin : 0px !important;
+        margin-top: 6% !important;
+        
+        height: auto !important;
+    }
+
+    .card span{
+        position: absolute;
+        bottom: 8%;
+        left: 5%;
+    }
+    .item-inner{
+        border-bottom: 0px !important;
+    }
+    .p{
+        font-size: 90%;
+    }
+
+    .titulo{
+        background-color: #ffde4d  !important;
+        color: rgb(0, 0, 0);
+        //border-radius: 5px;
+        border: 0px solid #000000 !important;
+        height: 5% !important;
+    }
+
+
+
+    /*.item-servicos{
+        float: right !important;
+        margin-right: 0px !important;
+    }
+
+    .item-chamados{
+        float: right !important;
+        margin-right: 0px !important;
+        margin-top: 0px;
+    }*/
+
+    .item-faturamento{
+        margin-top: 0px;
+    }
+    /*.modal {
+        display: none; // Hidden by default 
+        position: fixed; // Stay in place 
+        z-index: 1; // Sit on top 
+        left: 0;
+        top: 0;
+        width: 100%; // Full width 
+        height: 100%; // Full height 
+        overflow: auto; // Enable scroll if needed 
+        background-color: rgb(0,0,0); // Fallback color 
+        background-color: rgba(0,0,0,0.4); // Black w/ opacity 
+    }*/
+
+    /* Modal Content/Box 
     .modal-content {
         background-color: green;
         
-        margin: 15% auto; /* 15% from the top and centered */
+        margin: 15% auto; //15% from the top and centered 
         padding: 0px;
         border: 1px solid #888;
-        width: 10%; /* Could be more or less, depending on screen size */
+        width: 10%; // Could be more or less, depending on screen size 
         margin-right: 25%;
-    }
+    }*/
 
-    .amarelo{
+    /*.amarelo{
         background-color: yellow;
         height: 2px;
     }
@@ -38,17 +115,17 @@ page-menu-eletricista {
     }
     .voce{
         font-size: 150%;
-        display: flex;
+        //display: flex;
         justify-content: center;
     }
     .butao{
-        border-radius: 100px;
+        //border-radius: 100px;
         width: 100px;
         height: 100px;
         background-color: #E7E7E7;
         display: inline-block;
         margin-left: 5%;
-        transform:translateY(90%);
+        //transform:translateY(90%);
     }
     .perfil{
         color: #979797;
@@ -60,32 +137,32 @@ page-menu-eletricista {
     }
     .bperf{
         background-color: #39BD34;
-        border-radius: 100px;
+        //  border-radius: 100px;
         width: 100px;
         height: 100px;
         display: inline-block;
         margin-left: 5%;
-        transform:translateY(90%);   
+        //transform:translateY(90%);   
     }
     .bcham{
         background-color: #412CFF;
-        border-radius: 100px;
+        //border-radius: 100px;
         width: 100px;
         height: 100px;
         display: inline-block;
         margin-left: 25%;
         margin-right: 5%;
-        transform:translateY(90%);
+        //transform:translateY(90%);
     }
     .bbulb{
         background-color: #f5010b;
-        border-radius: 100px;
+        //border-radius: 100px;
         width: 100px;
         height: 100px;
         display: inline-block;
         margin-left: 25%;
         margin-right: 5%;
-        transform:translateY(90%);
+        //transform:translateY(90%);
     }
     .flash{
         color: black;
@@ -103,33 +180,33 @@ page-menu-eletricista {
         margin-left: 10%;
         margin-right: 36%;
         margin-top: 10px;
-        transform:translateY(455%);
+        //transform:translateY(455%);
     }
     .pserv{
         font-size: 115%;
         margin-top: 10px;
-        transform:translateY(455%);
+        //transform:translateY(455%);
     }
     .psoli{
         font-size: 115%;
         margin-left: 6%;
         margin-right: 22%;
         margin-top: 10px;
-        transform:translateY(455%);
+        //transform:translateY(455%);
     }
     .pcham{
         font-size: 115%;
         margin-left: 6%;
         margin-right: 15%;
         margin-top: 10px;
-        transform:translateY(455%);
+        //transform:translateY(455%);
 
     }
     .pres{
         font-size: 120%;
         display: flex;
         justify-content: center;
-        transform:translateY(455%);
+        //transform:translateY(455%);
     }
     .img{
         width: 20%;
@@ -145,8 +222,8 @@ page-menu-eletricista {
         width: 21%;
         color:black;
         background-color: #00D100;
-        transform:translateY(300%);
+        //transform:translateY(300%);
         margin-left: 38%;
 
-    }
+    }*/
 }

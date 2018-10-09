@@ -30,11 +30,51 @@ export class MenuEletricistaPage {
   private lat;
   private lng;
   private ip;
+  public pedir = false;
+  public servicos = false;
+  public faturamento = false;
+  public chamados = false;
+  public pedir_content = "expandir";
+  public servicos_content = "expandir";
+  public faturamento_content = "expandir";
+  public chamados_content = "expandir";
+  items: any = [];
+  itemExpandHeight: number = 100;
 
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _http: HttpClient, private geolocation: Geolocation) {
-    var watch = this.geolocation.watchPosition()
+    var watch = this.geolocation.watchPosition();
+    this.items = [
+      {
+        expanded: false,
+        content: "expandir",
+        text: "Meu perfil",
+        expand_content : "Conteúdo Perfil",
+        icon: "contact"
+      },
+      {
+        expanded: false,
+        content: "expandir",
+        text: "Serviços",
+        expand_content : "Conteúdo Serviços",
+        icon: "hammer"
+      },
+      {
+        expanded: false,
+        content: "expandir",
+        text: "Faturamento",
+        expand_content: "Conteúdo Faturamento",
+        icon: "cash"
+      },
+      {
+        expanded: false,
+        content: "expandir",
+        text: "Chamados",
+        expand_content: "Conteúdo Chamados",
+        icon: "call"
+      },
+    ];
     watch.subscribe((data) => {
       this.lat = data.coords.latitude
       this.lng = data.coords.longitude
@@ -82,7 +122,6 @@ export class MenuEletricistaPage {
     //this._http.patch(url, postData)
     //.subscribe((data) => {console.log(data)})}, 10000)
 
-
     observador.subscribe((data) => {
       var context = {
         necessidade : data['necessidade'],
@@ -113,4 +152,51 @@ export class MenuEletricistaPage {
     console.log('ionViewDidLoad MenuEletricistaPage');
   }
 
+  expandItem(item){
+    this.items.map((listItem) => {
+      if(item == listItem){
+        listItem.expanded = !listItem.expanded;
+      } else {
+        listItem.expanded = false;
+      }
+      return listItem;
+    });
+  }
+
+  /*teste(){
+    console.log("uhul");
+  }
+
+  limpa(){
+   document.querySelectorAll('.pedir').forEach(item => {
+      item.classList.remove('expandir');
+    })
+    this.pedir_content = "expandir";
+  }
+
+  muda(nome){
+    console.log('entrou muda');
+    this.limpa();
+    console.log('saio limpa');
+    if (nome == "pedir"){
+      console.log('entrou pedir');
+      if(!this.pedir){
+        console.log('entrou bool');
+        document.querySelectorAll('.pedir').forEach(item => {
+          item.classList.add('expandir');
+          console.log('entrou document');
+        })
+        this.pedir_content = "ocultar";
+        this.pedir = true;
+      } else{
+        this.pedir = false;
+      }
+    } else if (nome == "faturamento"){
+
+    } else if (nome == "chamados"){
+
+    } else if (nome == "servicos"){
+
+    }
+  }*/
 }

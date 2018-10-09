@@ -4,32 +4,43 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!--<ion-header>
 
   <ion-navbar>
     <ion-title>servico-finalizado</ion-title>
   </ion-navbar>
 
-</ion-header>
+</ion-header>-->
 
 
 <ion-content padding>
-  <h1>Seu serviço foi finalizado!</h1>
+  <ion-item class="titulo">
+    <h1>Seu serviço foi finalizado!</h1>
     <h1>Deixe sua avaliação!</h1>
-    <div class="amarelo"><p>  </p></div>
+  </ion-item>
+  <ion-item class="meio">
     <p class="detalhe">Detalhes</p>
-    <div class="img"><img class="imga" src="../../assets/imgs/Lampada.jpg"></div>
+    <div class="img center"><img class="imga" src="../../assets/imgs/Lampada.jpg"></div>
     <p class="nome">Ana Maria</p>
     <p class="data">22/04/18 - 20:00</p>
     <p class="preço">R$25,00</p>
     <p class="tempo">O tempo de duração foi 04h30min30s</p>
-    <p class="relatorio">O relatório não está correto? Clique aqui</p>
+  </ion-item>
+  <ion-item class="meio2">
+    
     <p class="qual">Qual foi a qualidade do serviço?</p>
-    <p class="deixe">Deixe um comentário</p>
-    <form >    
+    <div class="img"><img class="estrela" src="../../assets/imgs/cincoestrelas.png"></div>
+  </ion-item>
+  <ion-item class="meio3">
+    <p class="deixe">Deixe um comentário:</p>
+    <form class="forms">    
       <ion-item class="item">
           <ion-input value="Escreva aqui seu comentário" name="Usuario" type="text"></ion-input>
-          </ion-item> 
+          </ion-item>   
       <button class="enviar" ion-button block type="submit">Enviar</button>
     </form>
+    <p class="relatorio">O relatório não está correto? Clique aqui</p>
+  </ion-item>
+  
+  
 </ion-content>
