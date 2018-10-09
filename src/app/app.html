@@ -7,13 +7,13 @@
     <ion-content padding>
         <ion-list inset no-lines>
             <div class="divz">
-                <img class ="imgperf" src="../assets/imgs/logo.png">
+                <img class ="imgperf" src="../assets/imgs/img.png">
             </div>
             <p class="nomez">{{ nome }}</p>
             <button style=border:0px ion-item *ngFor="let pagina of paginas" menuClose (click)="abrePagina(pagina)">{{ pagina.titulo }}</button>
             
         </ion-list>
-        <p class="logout"> <ion-icon class="icone" ios="ios-close-circle" md="md-close-circle"></ion-icon>Logout</p>
+        <p class="logout"> Logout</p>
     </ion-content>
 </ion-menu>
 
