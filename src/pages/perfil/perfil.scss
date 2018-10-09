@@ -1,9 +1,12 @@
 page-perfil {
+.ion-content{
+    font-family:'Ubuntu';
+}
 h1{
     text-align: center;
 }
 .fundo{
-    background-color: #E9E9E9;
+    background-color: #E9E9E9 !important;;
 }
 .amarelo{
     background-color: yellow;
@@ -18,10 +21,11 @@ h1{
     height: 100px;
     width: 100px;
     border-radius: 100px;
-    margin-left: 40%;
+    margin-left: 34.5%;
 }
-h2{
-    font-size: 140%;
+.p{
+    font-size: 140% !important;
+    margin-top: 5%;
     text-align: center;
 }
 .topo{
@@ -38,26 +42,12 @@ h2{
 }
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
-    transition: 0.3s;
-    background-color: white;
-    transform:translateY(15%);
-    width: 110%;
-    margin-left: -5%;
+    margin: 0px !important;
+    margin-bottom: 10px !important;
+    width:100%;
+    background-color: #fffefa;
 }
-.card2 {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
-    transition: 0.3s;
-    background-color: white;
-    transform:translateY(15%);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
-    width: 110%;
-    margin-left: -5%;
-    margin-top:-11.5%;
-}
+
 .card3 {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
@@ -71,9 +61,6 @@ h2{
     padding-bottom: 5%;
 }
 .info{
-    color:red;;
-    font-size: 150%;
-    padding-left: 3%;
     font-weight: bold;
 }
 .container {
@@ -104,7 +91,6 @@ h2{
     margin-right: 5%;
 }
 .cartao{
-    color:red;;
     font-size: 150%;
     padding-left: 6%;
     font-weight: bold;
