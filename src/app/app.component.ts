@@ -21,6 +21,7 @@ import { ServicospassadosclientePage } from '../pages/servicospassadoscliente/se
 import { PedidoEletricistaPage } from '../pages/pedido-eletricista/pedido-eletricista';
 import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista';
 import { IniciarServicoElePage } from '../pages/iniciar-servico-ele/iniciar-servico-ele';
+import { ServicoIniciadoEletPage } from '../pages/servico-iniciado-elet/servico-iniciado-elet';
 
 //Providers
 import { ClienteProvider } from '../../src/providers/cliente';
@@ -38,7 +39,7 @@ import { Events } from 'ionic-angular';
 })
 export class MyApp {
 
-  rootPage:any = PedirservicoPage;
+  rootPage:any = ServicoIniciadoEletPage;
 
   nome : string = "oi medeiros";
   foto : string = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg/200px-Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg";
