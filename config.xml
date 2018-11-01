@@ -81,14 +81,11 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-<<<<<<< HEAD
     <plugin name="cordova-plugin-googlemaps" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps" />
-=======
     <plugin name="cordova-plugin-networkinterface" spec="^2.0.0" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
     <engine name="android" spec="7.0.0" />
     <engine name="browser" spec="5.0.4" />
->>>>>>> 9009787af5e7fc56b095536c685c81af9646b580
 </widget>
