@@ -10,7 +10,9 @@ import { ExpandableComponent} from '../../components/expandable/expandable';
   ],
   imports: [
     IonicPageModule.forChild(MenuEletricistaPage),
-    
   ],
+  entryComponents: [
+    MenuEletricistaPage
+  ]
 })
 export class MenuEletricistaPageModule {}

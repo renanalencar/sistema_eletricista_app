@@ -105,7 +105,7 @@ export class MenuClientePage {
   }
 
   abrePagina(){
-    this.navCtrl.push(PedirservicoPage);
+    this.navCtrl.push('PedirservicoPage');
   }
   
   iniciar() {

@@ -48,7 +48,8 @@ export class MenuEletricistaPage {
         text: "Meu perfil",
         expand_content : 
           "Nome:" ,
-        icon: "contact"
+        icon: "contact",
+        nav: 'PerfilEletPage',
       },
       {
         expanded: false,
@@ -160,40 +161,9 @@ export class MenuEletricistaPage {
     });
   }
 
-  /*teste(){
-    console.log("uhul");
+  maisInfo(pagina){
+    console.log('mais info')
+    this.navCtrl.push(pagina);
   }
 
-  limpa(){
-   document.querySelectorAll('.pedir').forEach(item => {
-      item.classList.remove('expandir');
-    })
-    this.pedir_content = "expandir";
-  }
-
-  muda(nome){
-    console.log('entrou muda');
-    this.limpa();
-    console.log('saio limpa');
-    if (nome == "pedir"){
-      console.log('entrou pedir');
-      if(!this.pedir){
-        console.log('entrou bool');
-        document.querySelectorAll('.pedir').forEach(item => {
-          item.classList.add('expandir');
-          console.log('entrou document');
-        })
-        this.pedir_content = "ocultar";
-        this.pedir = true;
-      } else{
-        this.pedir = false;
-      }
-    } else if (nome == "faturamento"){
-
-    } else if (nome == "chamados"){
-
-    } else if (nome == "servicos"){
-
-    }
-  }*/
 }
