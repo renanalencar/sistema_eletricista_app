@@ -30,27 +30,24 @@ export class MenuEletricistaPage {
   private lat;
   private lng;
   private ip;
-  public pedir = false;
-  public servicos = false;
-  public faturamento = false;
-  public chamados = false;
-  public pedir_content = "expandir";
-  public servicos_content = "expandir";
-  public faturamento_content = "expandir";
-  public chamados_content = "expandir";
   items: any = [];
-  itemExpandHeight: number = 100;
+  //public nome
+  //itemExpandHeight: number = 100;
 
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _http: HttpClient, private geolocation: Geolocation) {
     var watch = this.geolocation.watchPosition();
+    var res = this.navParams.get('DadosLogin');
+    var eletricista_segundo = this.navParams.get('user_eletricista');
+
     this.items = [
       {
         expanded: false,
         content: "expandir",
         text: "Meu perfil",
-        expand_content : "Conteúdo Perfil",
+        expand_content : 
+          "Nome:" ,
         icon: "contact"
       },
       {

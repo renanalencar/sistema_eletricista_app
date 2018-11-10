@@ -6,7 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+/*import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
@@ -18,13 +18,11 @@ import { ServicoFinalizadoPage } from '../pages/servico-finalizado/servico-final
 import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
 import { ServicoIniciadoPage } from '../pages/servico-iniciado/servico-iniciado';
 import { IniciarServicoElePage } from '../pages/iniciar-servico-ele/iniciar-servico-ele';
-
+*/
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
 import { UsuarioService } from '../domain/usuario/usuario-service';
-
-import { ExpandableComponent} from '../components/expandable/expandable';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
@@ -38,7 +36,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
+    /*HomePage,
     LoginPage,
     MenuClientePage,
     MenuEletricistaPage,
@@ -50,7 +48,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     IniciarServicoPage,
     ServicoIniciadoPage,
     ExpandableComponent,
-    IniciarServicoElePage
+    IniciarServicoElePage*/
   ],
   imports: [
     BrowserModule,
@@ -62,7 +60,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
+    /*HomePage,
     LoginPage,
     MenuClientePage,
     MenuEletricistaPage,
@@ -73,7 +71,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     ServicoFinalizadoPage,
     IniciarServicoPage,
     ServicoIniciadoPage,
-    IniciarServicoElePage
+    IniciarServicoElePage*/
   ],
   providers: [
     Geolocation,

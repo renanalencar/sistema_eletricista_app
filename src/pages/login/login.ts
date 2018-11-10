@@ -6,7 +6,7 @@ import { MenuEletricistaPage } from '../menu-eletricista/menu-eletricista';
 import { LoginProvider } from '../../providers/login';
 import { Events } from 'ionic-angular';
 
-
+@IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'

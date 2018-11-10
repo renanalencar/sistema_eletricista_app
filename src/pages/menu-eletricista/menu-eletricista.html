@@ -13,8 +13,9 @@
           <p id="text-perfil" class="p">{{ item.text }}</p>
         </span>
       </ion-item>
-      <expandable [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
-          {{ item.expand_content }}
+      <expandable  [expanded]="item.expanded">
+          <p class="conteudo">{{ item.expand_content }}</p>
+          <p class="maisinfo">Mais Informações</p>
       </expandable>
     </button>
 
