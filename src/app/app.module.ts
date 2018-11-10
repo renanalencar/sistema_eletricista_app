@@ -19,6 +19,10 @@ import { IniciarServicoPage } from '../pages/iniciar-servico/iniciar-servico';
 import { ServicoIniciadoPage } from '../pages/servico-iniciado/servico-iniciado';
 import { IniciarServicoElePage } from '../pages/iniciar-servico-ele/iniciar-servico-ele';
 */
+import { ServicoIniciadoEletPage } from '../pages/servico-iniciado-elet/servico-iniciado-elet';
+import { ServicospassadoseletPage } from '../pages/servicospassadoselet/servicospassadoselet';
+import { PerfilEletPage } from '../pages/perfil-elet/perfil-elet';
+
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
 import { EletricistaProvider } from '../../src/providers/eletricista';
@@ -48,7 +52,10 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     IniciarServicoPage,
     ServicoIniciadoPage,
     ExpandableComponent,
-    IniciarServicoElePage*/
+    IniciarServicoElePage,
+    ServicoIniciadoEletPage,
+    ServicospassadoseletPage,
+    PerfilEletPage*/
   ],
   imports: [
     BrowserModule,
@@ -71,7 +78,10 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     ServicoFinalizadoPage,
     IniciarServicoPage,
     ServicoIniciadoPage,
-    IniciarServicoElePage*/
+    IniciarServicoElePage,
+    ServicoIniciadoEletPage,
+    ServicospassadoseletPage,
+    PerfilEletPage */
   ],
   providers: [
     Geolocation,
