@@ -7,12 +7,6 @@ import { Dados } from '../classes/dados'
 import { Usuario} from '../classes/usuario'
 import 'rxjs/Rx';
 
-/*
-  Provider para fazer conexão com a API da plataforma da EC Cursos
-
-  Todos os métodos devem retornar uma promessa e seguir o padrão de nomes.
-
-*/
 @Injectable()
 export class LoginProvider {
 
