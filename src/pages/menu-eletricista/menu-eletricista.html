@@ -4,17 +4,18 @@
       <h1>Bem vindo!</h1>
     </ion-item>
     
-    <button class="agoravai" detail-none (click)="expandItem(item)" ion-item *ngFor="let item of items">
+    <button class="agoravai" detail-none (click)="maisInfo(item.nav)" ion-item *ngFor="let item of items">
       <ion-item class="item-perfil card">
         <!--<h3 class="h3 perfil" (click)="muda('perfil')">{{ pedir_content }}<ion-icon name="arrow-down"></ion-icon></h3>-->
-        <h3 class="h3 perfil" detail-none (click)="expandItem(item)" ion-item>{{ item.content }}<ion-icon name="arrow-down"></ion-icon></h3>
+        <h3 class="h3 perfil" detail-none ion-item></h3>
         <span> 
           <ion-icon name="{{item.icon}}" id="icon-perfil"></ion-icon>
           <p id="text-perfil" class="p">{{ item.text }}</p>
         </span>
       </ion-item>
-      <expandable [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
-          {{ item.expand_content }}
+      <expandable  [expanded]="item.expanded">
+          <p class="conteudo">{{ item.expand_content }}</p>
+          <p class="maisinfo" (click)="maisInfo(item.nav)">Mais Informações</p>
       </expandable>
     </button>
 

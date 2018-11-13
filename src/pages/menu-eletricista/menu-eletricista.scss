@@ -60,170 +60,18 @@ page-menu-eletricista {
         height: 5% !important;
     }
 
-
-
-    /*.item-servicos{
-        float: right !important;
-        margin-right: 0px !important;
+    .conteudo {
+        padding: 8%;
     }
 
-    .item-chamados{
-        float: right !important;
-        margin-right: 0px !important;
-        margin-top: 0px;
-    }*/
+    .maisinfo {
+        color: rgb(75, 138, 255);
+        text-decoration: underline;
+    }
 
     .item-faturamento{
         margin-top: 0px;
-    }
-    /*.modal {
-        display: none; // Hidden by default 
-        position: fixed; // Stay in place 
-        z-index: 1; // Sit on top 
-        left: 0;
-        top: 0;
-        width: 100%; // Full width 
-        height: 100%; // Full height 
-        overflow: auto; // Enable scroll if needed 
-        background-color: rgb(0,0,0); // Fallback color 
-        background-color: rgba(0,0,0,0.4); // Black w/ opacity 
-    }*/
-
-    /* Modal Content/Box 
-    .modal-content {
-        background-color: green;
         
-        margin: 15% auto; //15% from the top and centered 
-        padding: 0px;
-        border: 1px solid #888;
-        width: 10%; // Could be more or less, depending on screen size 
-        margin-right: 25%;
-    }*/
+    }
 
-    /*.amarelo{
-        background-color: yellow;
-        height: 2px;
-    }
-    .eletricista{
-        display: inline-block;
-        margin-top: 0px;
-    }
-    .verm{
-        display: inline-block;
-        color: red;
-        margin-top:-3px;
-    }
-    .voce{
-        font-size: 150%;
-        //display: flex;
-        justify-content: center;
-    }
-    .butao{
-        //border-radius: 100px;
-        width: 100px;
-        height: 100px;
-        background-color: #E7E7E7;
-        display: inline-block;
-        margin-left: 5%;
-        //transform:translateY(90%);
-    }
-    .perfil{
-        color: #979797;
-        font-size: 730%;
-    }
-    .solicitar{
-        color: black;
-        font-size: 500%;
-    }
-    .bperf{
-        background-color: #39BD34;
-        //  border-radius: 100px;
-        width: 100px;
-        height: 100px;
-        display: inline-block;
-        margin-left: 5%;
-        //transform:translateY(90%);   
-    }
-    .bcham{
-        background-color: #412CFF;
-        //border-radius: 100px;
-        width: 100px;
-        height: 100px;
-        display: inline-block;
-        margin-left: 25%;
-        margin-right: 5%;
-        //transform:translateY(90%);
-    }
-    .bbulb{
-        background-color: #f5010b;
-        //border-radius: 100px;
-        width: 100px;
-        height: 100px;
-        display: inline-block;
-        margin-left: 25%;
-        margin-right: 5%;
-        //transform:translateY(90%);
-    }
-    .flash{
-        color: black;
-        font-size: 550%;
-    }
-    .money{
-        color:white;
-        font-size: 470%;
-    }
-    p{
-        display: inline-block;
-    }
-    .pperfil{
-        font-size: 115%;
-        margin-left: 10%;
-        margin-right: 36%;
-        margin-top: 10px;
-        //transform:translateY(455%);
-    }
-    .pserv{
-        font-size: 115%;
-        margin-top: 10px;
-        //transform:translateY(455%);
-    }
-    .psoli{
-        font-size: 115%;
-        margin-left: 6%;
-        margin-right: 22%;
-        margin-top: 10px;
-        //transform:translateY(455%);
-    }
-    .pcham{
-        font-size: 115%;
-        margin-left: 6%;
-        margin-right: 15%;
-        margin-top: 10px;
-        //transform:translateY(455%);
-
-    }
-    .pres{
-        font-size: 120%;
-        display: flex;
-        justify-content: center;
-        //transform:translateY(455%);
-    }
-    .img{
-        width: 20%;
-        display: inline-block;
-        float: right;
-    }
-    h1{
-        display: inline-block;
-        margin-right: 45%;
-    }
-    .recebe{
-        font-size: 70%;
-        width: 21%;
-        color:black;
-        background-color: #00D100;
-        //transform:translateY(300%);
-        margin-left: 38%;
-
-    }*/
 }

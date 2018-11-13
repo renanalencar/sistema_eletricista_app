@@ -28,34 +28,6 @@ export class LoginProvider {
 
   /** Método que faz login e salva token de usuário caso tenha sucesso  **/
   public efetuaLogin(user: string, senha: string){
-  	/*return new Promise<any>((resolve, reject) => {
-      this.http.post(this.apiURL, {
-        "username": user,
-        "password": senha
-        }
-      )
-      .subscribe(
-        res => {
-          //@todo Pega resposta do servidor. Se não teve erro, resolve(res), cria novo usuário, e salva token 
-          //Se teve erro, reject(res.mensagem)
-          console.log("resposta", res);
-          //dados enviados validos
-          //this.usuarioLogado = new RespostaLogin(res.token, res.cliente);
-          this.token = res.token;
-          this.dados = res.cliente;
-          //this.usuario = res.cliente.usuario;
-          console.log("token", this.token, "dados", this.dados, "usuario", this.usuario)
-          this.storage.set("user", user);
-          this.storage.set("senha", senha);
-          resolve(res);
-        },
-        err => {
-          //@todo Nesse caso, a requisição deu erro, e deve-se dar reject("Erro na requisição"); 
-          console.log("erro no login", err);
-          reject("Erro na requisição");
-        }
-      );
-    });*/
     return this.http
     .post(this.apiURL, {
       "username": user,
@@ -65,26 +37,19 @@ export class LoginProvider {
     .map(res => res.json())
     .toPromise()
     .then(res => {
-        //let usuario = new Usuario(dado.nome, dado.dataNascimento, dado.email, dado.telefone);
-        //this._usuarioLogado = usuario;
-        //return usuario;
         console.log("resposta", res);
-        //dados enviados validos
-        //this.usuarioLogado = new RespostaLogin(res.token, res.cliente);
-        //this.token = res.token;
         if(res.cliente){
           this.dados = res.cliente;
         } else if(res.eletricista){
           this.dados = res.eletricista;
         }
-        //this.usuario = res.cliente.usuario;
-        //console.log("token", this.token, "dados", this.dados)//, "usuario", this.usuario)
         this.storage.set("user", user);
         this.storage.set("senha", senha);
         this.resposta = {
           token: res.token,
           cliente: this.dados,
         }
+        this.usuarioLogado = this.resposta;
         console.log(this.resposta)
         return this.resposta;
     })

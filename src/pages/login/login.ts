@@ -6,7 +6,7 @@ import { MenuEletricistaPage } from '../menu-eletricista/menu-eletricista';
 import { LoginProvider } from '../../providers/login';
 import { Events } from 'ionic-angular';
 
-
+@IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
@@ -42,17 +42,17 @@ export class LoginPage {
       content: 'Carregando. Aguarde...'
     });
     loader.present();
-
     this.provider
       .efetuaLogin(this.email, this.senha)
       .then(res => {
         console.log("tipo", res.cliente.tipo);
         this.events.publish('user:created', res);
         if (res.cliente.tipo == "Cliente"){
-          this.navCtrl.setRoot(MenuClientePage, {DadosLogin: res});
+          this.navCtrl.setRoot('MenuClientePage', {DadosLogin: res});
           loader.dismiss();
         } else if (res.cliente.tipo == "Eletricista"){
-          this.navCtrl.setRoot(MenuEletricistaPage, {DadosLogin: res});
+          console.log('vai setroot')
+          this.navCtrl.setRoot('MenuEletricistaPage', {DadosLogin: res});
           loader.dismiss();
         } else {
           loader.dismiss();

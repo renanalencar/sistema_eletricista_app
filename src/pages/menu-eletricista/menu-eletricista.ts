@@ -30,28 +30,26 @@ export class MenuEletricistaPage {
   private lat;
   private lng;
   private ip;
-  public pedir = false;
-  public servicos = false;
-  public faturamento = false;
-  public chamados = false;
-  public pedir_content = "expandir";
-  public servicos_content = "expandir";
-  public faturamento_content = "expandir";
-  public chamados_content = "expandir";
   items: any = [];
-  itemExpandHeight: number = 100;
+  //public nome
+  //itemExpandHeight: number = 100;
 
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _http: HttpClient, private geolocation: Geolocation) {
     var watch = this.geolocation.watchPosition();
+    var res = this.navParams.get('DadosLogin');
+    var eletricista_segundo = this.navParams.get('user_eletricista');
+
     this.items = [
       {
         expanded: false,
         content: "expandir",
         text: "Meu perfil",
-        expand_content : "Conteúdo Perfil",
-        icon: "contact"
+        expand_content : 
+          "Nome:" ,
+        icon: "contact",
+        nav: 'PerfilEletPage',
       },
       {
         expanded: false,
@@ -163,40 +161,9 @@ export class MenuEletricistaPage {
     });
   }
 
-  /*teste(){
-    console.log("uhul");
+  maisInfo(pagina){
+    console.log('mais info')
+    this.navCtrl.push(pagina);
   }
 
-  limpa(){
-   document.querySelectorAll('.pedir').forEach(item => {
-      item.classList.remove('expandir');
-    })
-    this.pedir_content = "expandir";
-  }
-
-  muda(nome){
-    console.log('entrou muda');
-    this.limpa();
-    console.log('saio limpa');
-    if (nome == "pedir"){
-      console.log('entrou pedir');
-      if(!this.pedir){
-        console.log('entrou bool');
-        document.querySelectorAll('.pedir').forEach(item => {
-          item.classList.add('expandir');
-          console.log('entrou document');
-        })
-        this.pedir_content = "ocultar";
-        this.pedir = true;
-      } else{
-        this.pedir = false;
-      }
-    } else if (nome == "faturamento"){
-
-    } else if (nome == "chamados"){
-
-    } else if (nome == "servicos"){
-
-    }
-  }*/
 }

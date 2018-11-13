@@ -3,12 +3,12 @@ import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
-import { LoginPage } from '../pages/login/login';
+//import { HomePage } from '../pages/home/home';
+//import { LoginPage } from '../pages/login/login';
 
-import { ExpandableComponent} from '../components/expandable/expandable';
+//import { ExpandableComponent} from '../components/expandable/expandable';
 
-//Paginas Cliente
+/*//Paginas Cliente
 import { MenuClientePage } from '../pages/menu-cliente/menu-cliente';
 import { PedirservicoPage } from '../pages/pedirservico/pedirservico';
 import { PerfilPage } from '../pages/perfil/perfil';
@@ -42,16 +42,17 @@ import { Events } from 'ionic-angular';
 export class MyApp {
 
   rootPage:any = HistoricoEletPage;
+  rootPage:any = 'LoginPage';
 
   nome : string = "oi medeiros";
   foto : string = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg/200px-Deputados_cabo_Daciolo_%28PSOL-RJ%29_e_Marcos_Reategui_%28PSC-AP%29_participam_do_programa_Brasil_em_Debate_%28cropped%29.jpg";
   email : string = "erro@erro.com";
   endereco : string = "R. Erro, 123";
-  telefone : string = "000000000"
+  telefone : string = "000000000";
 
   public paginas = [
-     {titulo: 'Perfil', componente: PerfilPage },
-     {titulo: 'Histórico de serviços', componente: ServicospassadosclientePage }
+     {titulo: 'Perfil', componente: 'PerfilPage' },
+     {titulo: 'Histórico de serviços', componente: 'ServicospassadosclientePage' }
   ];
 
   @ViewChild(Nav) public nav: Nav;
