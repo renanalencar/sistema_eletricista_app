@@ -23,7 +23,8 @@ import { MenuEletricistaPage } from '../pages/menu-eletricista/menu-eletricista'
 import { IniciarServicoElePage } from '../pages/iniciar-servico-ele/iniciar-servico-ele';
 import { ServicoIniciadoEletPage } from '../pages/servico-iniciado-elet/servico-iniciado-elet';
 import { ServicospassadoseletPage } from '../pages/servicospassadoselet/servicospassadoselet';
-import { PerfilEletPage } from '../pages/perfil-elet/perfil-elet'; */
+import { HistoricoEletPage } from '../pages/historico-elet/historico-elet';
+import { PerfilEletPage } from '../pages/perfil-elet/perfil-elet';
 //Providers
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -40,6 +41,7 @@ import { Events } from 'ionic-angular';
 })
 export class MyApp {
 
+  rootPage:any = HistoricoEletPage;
   rootPage:any = 'LoginPage';
 
   nome : string = "oi medeiros";

@@ -128,11 +128,11 @@ page-perfil-elet {
         // transform:translateY(90px);
     }
     .editar{
-        font-size: 105%;
-        display: flex;
-        justify-content: center;
-        // transform:translateY(120px);
-        color: black;
-        background-color: #fffefa;
+        background-color: #ffde4d  !important;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        margin-top: 5%;
+        border-radius: 0px;
+        border: 1px solid #000000 !important;
     }
 }
