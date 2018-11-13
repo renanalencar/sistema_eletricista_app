@@ -1,0 +1,43 @@
+page-historico-elet {
+    ion-content{
+        background: #E9E9E9 !important;
+        font-family:'Ubuntu';
+    }
+
+    ion-card-content{
+        padding-top: 1% !important;
+    }
+
+    ion-card-title {
+        font-weight: bold;
+    }
+
+    ion-card {
+        //border: 3px solid #000000 !important;
+        background-color: #fffefa !important;
+        //border-radius: 10px !important;
+        margin-bottom: 20px !important;
+        
+    }
+
+    .cartao {
+        margin: 0px !important;
+        margin-bottom: 10px !important;
+        width:100%;
+    }
+
+    .titulo {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+    .botao {
+        background-color: #ffde4d  !important;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        margin-top: 5%;
+        border-radius: 0px;
+        border: 1px solid #000000 !important;
+    }
+}

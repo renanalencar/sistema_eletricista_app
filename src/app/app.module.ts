@@ -21,6 +21,7 @@ import { IniciarServicoElePage } from '../pages/iniciar-servico-ele/iniciar-serv
 import { ServicoIniciadoEletPage } from '../pages/servico-iniciado-elet/servico-iniciado-elet';
 import { ServicospassadoseletPage } from '../pages/servicospassadoselet/servicospassadoselet';
 import { PerfilEletPage } from '../pages/perfil-elet/perfil-elet';
+import { HistoricoEletPage } from '../pages/historico-elet/historico-elet';
 
 import { ClienteProvider } from '../../src/providers/cliente';
 import { LoginProvider } from '../../src/providers/login';
@@ -56,7 +57,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     IniciarServicoElePage,
     ServicoIniciadoEletPage,
     ServicospassadoseletPage,
-    PerfilEletPage
+    PerfilEletPage,
+    HistoricoEletPage
   ],
   imports: [
     BrowserModule,
@@ -82,7 +84,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     IniciarServicoElePage,
     ServicoIniciadoEletPage,
     ServicospassadoseletPage,
-    PerfilEletPage
+    PerfilEletPage,
+    HistoricoEletPage
   ],
   providers: [
     Geolocation,
