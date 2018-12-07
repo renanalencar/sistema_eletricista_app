@@ -16,22 +16,22 @@ import { LoginProvider } from '../../providers/login';
 })
 export class PerfilEletPage {
 
-  public nome : string;
-  public foto : string;
-  public endereco : string;
-  public telefone : string;
-  public email : string;
-  public user;
+  // public nome : string;
+  // public foto : string;
+  // public endereco : string;
+  // public telefone : string;
+  // public email : string;
+  // public user;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-    private login_provider: LoginProvider,) {
-      this.user = login_provider.getUsuarioLogado();
-      this.nome = this.user.cliente.usuario.first_name;
-      this.foto = this.user.cliente.foto;
-      this.endereco = this.user.cliente.endereco;
-      this.email = this.user.cliente.usuario.email;
-      this.telefone = this.user.cliente.telefone;
-  }
+  // constructor(public navCtrl: NavController, public navParams: NavParams,
+  //   private login_provider: LoginProvider,) {
+  //     this.user = login_provider.getUsuarioLogado();
+  //     this.nome = this.user.cliente.usuario.first_name;
+  //     this.foto = this.user.cliente.foto;
+  //     this.endereco = this.user.cliente.endereco;
+  //     this.email = this.user.cliente.usuario.email;
+  //     this.telefone = this.user.cliente.telefone;
+  //}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PerfilEletPage');

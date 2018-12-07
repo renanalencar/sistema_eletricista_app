@@ -31,7 +31,6 @@ export class IniciarServicoPage {
   }
 
   ionViewDidLoad() {
-    
     console.log('ionViewDidLoad MenuClientePage');
     var eletricista = new google.maps.LatLng(-23.5793521, -46.641414);
     var cliente = new google.maps.LatLng(-23.5761596, -46.6464069);
@@ -70,5 +69,14 @@ export class IniciarServicoPage {
   DeixaFalse(){
     this.status = false;
   }
+  stat: boolean = false;
+  Cancelar(){
+    this.stat = true;
+    this.status = false;
+  }
+  Voltar(){
+    this.stat = false;
+  }
+
 }
 

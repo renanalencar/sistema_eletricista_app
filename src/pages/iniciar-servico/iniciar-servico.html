@@ -6,9 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>iniciar-servico</ion-title>
-  </ion-navbar>
+
 
 </ion-header>
 
@@ -27,7 +25,12 @@
     <p class="nome">Nome eletricista</p>
     <p class="nota">Nota: 4.3</p>
     <button class="comecar" ion-button block type="submit">Começar</button>
-    <button class="cancelar" ion-button block type="submit">Cancelar</button>
+    <button class="cancelar" (click)="Cancelar()" ion-button block type="submit">Cancelar</button>
+  </div> 
+  <div class="cancelamento" [ngClass]="stat ? 'cancelamento' : 'xesque'">
+    <p class="deseja">Deseja mesmo cancelar?</p>
+    <button ion-button block class="comecar2" (click)="Voltar()" type="submit">Voltar</button>
+    <button ion-button class="cancelar2" (click)="Voltar()"block type="submit">Cancelar</button>
   </div>
 </ion-content>
->
+

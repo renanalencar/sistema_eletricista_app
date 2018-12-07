@@ -1,4 +1,18 @@
 page-perfil-elet {
+    .volta{
+        background: transparent;
+        color:black;
+        width: 15%;
+        height: 5%;
+        font-size: 240%;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute !important;
+        top: 3%;
+        left: 3%;
+        box-shadow: 0px;
+
+    }
     .ion-content{
         font-family:'Ubuntu';
     }
