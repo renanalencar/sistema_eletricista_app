@@ -1,0 +1,40 @@
+<!--
+  Generated template for the EditarPerfilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Editar Perfil</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2 class="introducao">
+    Confira suas informações abaixo!
+  </h2>
+
+  <form (submit)='mudarInfo()' class="form-servico">
+    <ion-list>
+      <ion-item>
+          <!--><ion-label stacked>Endereço:</ion-label></!-->
+          <ion-input placeholder="Endereço:" value="endereco" [(ngModel)]="endereco" name="endereco" type="text"></ion-input>
+      </ion-item> 
+      <ion-item> 
+          <!--><<ion-label stacked>Descreva o Serviço:</ion-label></!-->
+          <ion-input placeholder="E-mail:" [(ngModel)]="email" name="email" value="email" type="text"></ion-input>
+          <!-->falta fazer o texto da descrição quebrar, não é text-wrap</!-->
+      </ion-item>
+      <ion-item>
+        <!--><ion-label stacked>Endereço:</ion-label></!-->
+        <ion-input placeholder="Telefone:" value="telefone" [(ngModel)]="telefone" name="telefone" type="text"></ion-input>
+    </ion-item> 
+    </ion-list>
+    <button ion-button block type="submit" class="botao"  color="secondary">Salvar Alterações</button>
+    <button ion-button block (click)="cancelar()" class="botao-cancel"  color="danger">Cancelar</button>
+  </form>
+</ion-content>

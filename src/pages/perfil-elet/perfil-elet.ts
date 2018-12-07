@@ -37,4 +37,9 @@ export class PerfilEletPage {
     console.log('ionViewDidLoad PerfilEletPage');
   }
 
+  editar() {
+    this.navCtrl.push('EditarPerfilPage');
+  }
+
+
 }

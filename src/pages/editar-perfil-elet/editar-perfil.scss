@@ -1,0 +1,74 @@
+page-editar-perfil {
+    ion-content{
+        background: #E9E9E9 !important;
+    }
+    /*.form-servico ion-list{
+        
+    }*/
+    .form-servico ion-input{
+        border: 1px solid #000000;
+        background-color: #fffefa !important;
+        //border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .ion-title {
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+
+    .introducao {
+        font-size: 18px;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .botao {
+        //background-color: secondary !important;
+        //color: rgb(0, 0, 0);
+        font-weight: bold;
+        //border: 1px solid #000000;
+        //border-radius: 0px;
+    }
+
+    .desc {
+        height: 100px;
+    }
+
+    .item {
+        background: #E9E9E9 !important;
+        border: 0px !important;
+    }
+
+    .form-servico ion-item{
+        padding-left: 0px !important;
+    }
+
+    .form-servico ion-label {
+        font-size: 18px !important;
+        padding-bottom: 2%;
+    }
+
+    .ion-item{
+        border: 0px !important;
+    }
+
+    .list {
+        margin-bottom: 0px !important;
+    }
+
+    .item-inner{
+        padding: 0px !important;
+    }
+    .botao-cancel {
+        background-color: red;
+    }
+}
